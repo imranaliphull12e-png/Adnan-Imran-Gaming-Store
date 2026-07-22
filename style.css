@@ -117,7 +117,7 @@ footer p{
         height: 300px;
     }
     .card img{
-        height: 700px; object-fit: contain;
+        height: 500px; object-fit: contain;
 
     h2, h3, h4, h5, h6{
         font-size: 30px;
