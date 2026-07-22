@@ -15,7 +15,7 @@ h1{
     box-shadow: 0 0 15px rgba(0,255,255,0.3); padding-bottom: 20px; border: 2px solid #00d9ff;
 }
 .card img{
-    width:100%;  height: auto; display: block; object-fit: contain;
+    width:100%;  height: 400px; display: block; object-fit: cover;
 }
 h2{
     font-size: 40px; color: #E0E0E0; text-align: center; background-color: #1e1e1e; margin: 0;
@@ -60,7 +60,7 @@ h6{
     margin-bottom: 30px; position: relative;
 }
 .hero-img{
-    width: 100%; height: 500px; object-fit: cover;
+    width: 100%; height: 600px; object-fit: cover;
 }
 .hero-text{
  text-align: center; position: absolute;  transform: translate(-50%, -50%); width: 100%; top: 50%; left:50%;
