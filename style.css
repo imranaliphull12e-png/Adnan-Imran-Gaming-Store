@@ -1,5 +1,5 @@
 body{
-    margin: 0; padding: 0; background: #121212; font-family: Arial, sans-serif; color: white;
+    margin: 0; padding: 0; background: #121212; font-family: Arial, sans-serif; color: white; overflow-x: hidden;
 }
 header{
     text-align: center;  background-color: black; padding: 20px 0;
