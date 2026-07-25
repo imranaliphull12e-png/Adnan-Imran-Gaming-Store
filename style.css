@@ -81,7 +81,7 @@ footer p{
     margin: 0;
     font-size: 16px;
 }
-@media (max-width:768px){
+@media (max-width: 768px){
     .image-box img{
         height: 380px;
         .card{
