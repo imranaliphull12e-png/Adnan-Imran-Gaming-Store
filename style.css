@@ -88,5 +88,11 @@ footer p{
         .card{
             width: 95%;
         }
+    h1{
+        font-size: 35px;
+    }
+    .a-a{
+        font-size: 18px;
+    }
     }
     
