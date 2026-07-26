@@ -27,7 +27,7 @@ h1{
      font-size: 22px; color: #0ee06d; margin: 10px 0 0 0; background: transparent; text-align: center; line-height: 1.5;
     }
 .card{
-    background-color: #1b1b1b; width: 90%; max-width: 900px; margin: 30px auto; border-radius: 15px; overflow: hidden; text-align: center;
+    background-color: #1b1b1b; width: 90%; max-width: 900px; min-height: 700px; margin: 30px auto; border-radius: 15px; overflow: hidden; text-align: center;
     box-shadow: 0 0 15px rgba(0,255,255,0.3); padding: 20px; border: 2px solid #00d9ff; box-sizing: border-box;
 }
 .card h2{
@@ -93,6 +93,7 @@ footer p{
     }
         .card{
             width: 95%;
+            min-height: 700px;
         }
     h1{
         font-size: 35px;
