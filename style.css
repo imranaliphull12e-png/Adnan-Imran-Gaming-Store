@@ -15,7 +15,7 @@ margin:0 10px; border-radius: 50px; display: inline-block; font-size:18px; font-
     margin-bottom: 30px; position: relative;
 }
 .hero-img{
-    width: 100%; height: auto; object-fit: cover;
+    width: 280px; height: 300px; object-fit: cover;
 }
 .hero-text{
      position: absolute;  transform: translate(-50%, -50%);  top: 50%; left:50%; width: 100%; text-align: center;
