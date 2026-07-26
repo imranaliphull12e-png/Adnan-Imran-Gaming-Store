@@ -83,7 +83,7 @@ footer p{
 }
 @media (max-width:
         768px){
-    .imgag-box{
+    .image-box{
         height: 500px;
     }
     .image-box img{
