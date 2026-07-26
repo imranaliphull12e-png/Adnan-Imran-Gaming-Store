@@ -34,7 +34,7 @@ h1{
 color: white; font-size: 36px; text-align: center; margin: 10px 0;                                                                                       
 }
 .image-box{
-    width: 100%; height: auto;  display: flex;  justify-content: center;  align-items: flex-start;  overflow: hidden; padding-top: 0;
+    width: 100%; height: auto;  display: flex;  justify-content: center;  align-items: flex-start;  overflow: hidden; padding-top: 20px;
 }
 .image-box img{
     width: 100%;  height: auto;  object-fit: cover;  display: block;
@@ -84,7 +84,7 @@ footer p{
 @media (max-width:
         768px){
     .image-box{
-        height: aoto;
+        height: auto;
     }
     .image-box img{
         width: 100%;
