@@ -46,10 +46,10 @@ color: white; font-size: 40px; text-align: center; margin: 15x 0 10px; font-weig
     background-color: rgb(72, 255, 0); color: white; padding: 10px  20px; text-decoration: none; border-radius: 80px; display: inline-block; margin-right: 10px;
 }
 .call-btn{
-    background-color: #2563eb; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; display: inline-block;
+    background-color: #2563eb; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; display: inline-block;
 }
 .buttons{
-    text-align: center; margin-top: 20px; font-size: 15px
+    text-align: center; margin-top: 20px; font-size: 20px; padding: 14x 28px;
 }
 .about h2{
     color: gold; font-size: 35px; 
