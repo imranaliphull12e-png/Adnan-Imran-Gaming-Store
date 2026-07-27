@@ -101,5 +101,12 @@ footer p{
     .a-a{
         font-size: 28px;
     }
+    h2{
+        font-size: 40px;
+    }
+    .a-b{
+        font-size: 23px;
+        line-height: 1.5;
+    }
     }
     
