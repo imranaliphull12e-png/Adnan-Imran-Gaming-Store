@@ -44,11 +44,11 @@ color: white; font-size: 40px; text-align: center; margin: 15x 0 10px; font-weig
 }
 .whatsapp-btn{
     background-color: rgb(11, 224, 11); font-size: 30px; font-weight:bold; color: white; padding: 20px 40px; text-decoration: none;
-    border-radius: 50px; display: inline-block; margin-right: 10px;
+    border-radius: 999px; display: inline-block; margin-right: 10px;
 }
 .call-btn{
     background-color: rgb(43, 43, 238); color: white; font-size: 35px; font-weight: bold; padding: 20px 60px;
-    border-radius: 50px; text-decoration: none; display: inline-block;
+    border-radius: 999px; text-decoration: none; display: inline-block;
 }
 .buttons{
     text-align: center; margin-top: 20px; font-size: 30px;
