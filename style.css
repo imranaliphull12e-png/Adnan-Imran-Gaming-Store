@@ -43,15 +43,15 @@ color: white; font-size: 40px; text-align: center; margin: 15x 0 10px; font-weig
     color: white; background-color: #1e1e1e; font-size: 23px; text-align: center; margin: 10px 20px; line-height: 1.5;
 }
 .whatsapp-btn{
-    background-color: rgb(11, 224, 11); font-size: 20px; font-weight:bold; color: white; padding: 20px 40px; text-decoration: none;
+    background-color: rgb(11, 224, 11); font-size: 30px; font-weight:bold; color: white; padding: 20px 40px; text-decoration: none;
     border-radius: 50px; display: inline-block; margin-right: 10px;
 }
 .call-btn{
-    background-color: #2563eb; color: white; font-size: 20px; font-weight: bold; padding: 20px 40px;
+    background-color: #2563eb; color: white; font-size: 30px; font-weight: bold; padding: 20px 40px;
     border-radius: 50px; text-decoration: none; display: inline-block;
 }
 .buttons{
-    text-align: center; margin-top: 20px; font-size: 20px;
+    text-align: center; margin-top: 20px; font-size: 30px;
 }
 .about h2{
     color: gold; font-size: 35px; 
