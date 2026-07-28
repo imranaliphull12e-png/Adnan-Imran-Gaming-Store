@@ -60,10 +60,10 @@ color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: 
     text-align: center; margin-top: 20px; font-size: 50px;
 }
 .about h2{
-    color: gold; font-size: 70px; 
+    color: gold; font-size: 50px; 
 }
 .about p{
-    color: white; font-size: 50px; max-width: 700px; margin: auto; line-height: 30px; text-align: center;
+    color: white; font-size: 35px; max-width: 700px; margin: auto; line-height: 30px; text-align: center;
 }
 .contact{
     text-align: center; padding: 40px 20px;
@@ -87,7 +87,7 @@ footer{
 }
 footer p{
     margin: 0;
-    font-size: 40px;
+    font-size: 30px;
 }
 @media (max-width:
         768px){
