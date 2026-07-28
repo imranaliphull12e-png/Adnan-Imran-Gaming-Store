@@ -34,7 +34,8 @@ h1{
 color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;                                                                          
 }
 .card h3{
-    color: white; font-size: 40px text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;
+    color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;
+}
 .image-box{
     width: 100%; height: auto;  display: flex;  justify-content: center;  align-items: flex-start;  overflow: hidden; padding-top: 20px;
 }
