@@ -60,19 +60,19 @@ color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: 
     text-align: center; margin-top: 20px; font-size: 30px;
 }
 .about h2{
-    color: gold; font-size: 50px; 
+    color: gold; font-size: 70px; 
 }
 .about p{
-    color: white; font-size: 30px; max-width: 700px; margin: auto; line-height: 30px; text-align: center;
+    color: white; font-size: 50px; max-width: 700px; margin: auto; line-height: 30px; text-align: center;
 }
 .contact{
-    text-align: center; padding: 50px 20px;
+    text-align: center; padding: 40px 20px;
 }
 .contact h2{
     color: gold; font-size: 50px; margin-bottom: 20px; 
 }
 .contact p{
-    color: white; font-size: 30px; margin: 10px 0; text-align: center;
+    color: white; font-size: 40px; margin: 10px 0; text-align: center;
  }
 .contact a{
     display: inline-block; margin: 10px; padding: 10px 20px; background-color: gold;
