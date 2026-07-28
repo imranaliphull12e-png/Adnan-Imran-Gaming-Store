@@ -60,10 +60,10 @@ color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: 
     text-align: center; margin-top: 20px; font-size: 30px;
 }
 .about h2{
-    color: gold; font-size: 35px; 
+    color: gold; font-size: 50px; 
 }
 .about p{
-    color: white; font-size: 18px; max-width: 700px; margin: auto; line-height: 30px; text-align: center;
+    color: white; font-size: 30px; max-width: 700px; margin: auto; line-height: 30px; text-align: center;
 }
 .contact{
     text-align: center; padding: 50px 20px;
