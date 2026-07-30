@@ -57,8 +57,9 @@ color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: 
     border-radius: 999px; text-decoration: none; display: inline-block;
 }
 .view-more{
-    display: block; margin: 15px auto; padding: 12px 25px;background-color: #ff0000; color: #ffffff; border: none 
-    border-radius:8px; font-size: 30px; font-weight: bold; cursor: pointer;
+    display: inline-block; margin: 15px auto; padding: 12px 25px; background-color: #ff0000; color: #ffffff; border: none 
+    border-radius:50px; font-size: 30px; font-weight: bold; cursor: pointer; text-decoration: none;
+    
 }
 .buttons{
     text-align: center; margin-top: 20px; font-size: 50px;
