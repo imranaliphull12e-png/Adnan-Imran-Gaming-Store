@@ -86,8 +86,8 @@ color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: 
 .contact a:hover{
     background-color: white; color: black;
 }
-.view-more:havor{ 
-    background-color: #cc0000; transform: scale(1.05);
+.read-more:havor{ 
+    background-color: #cc0000;
 footer{
  background-color: #000;
     color: white; text-align: center; padding: 20px; margin-top: 40px; border-top: 2px solid gold;
