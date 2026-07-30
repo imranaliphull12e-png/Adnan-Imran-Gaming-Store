@@ -56,6 +56,10 @@ color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: 
     background-color: rgb(43, 43, 238); color: white; font-size: 35px; font-weight: bold; padding: 20px 60px;
     border-radius: 999px; text-decoration: none; display: inline-block;
 }
+.view-more{
+    display: block; margin: 15px auto; padding: 12px 25px;background-color: #ff0000; color: #ffffff; border: none 
+    border-radius:8px; font-size: 30px; font-weight: bold; cursor: pointer;
+}
 .buttons{
     text-align: center; margin-top: 20px; font-size: 50px;
 }
@@ -81,6 +85,8 @@ color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: 
 .contact a:hover{
     background-color: white; color: black;
 }
+.view-more:havor{ 
+    background-color: #cc0000; transform: scale(1.05);
 footer{
  background-color: #000;
     color: white; text-align: center; padding: 20px; margin-top: 40px; border-top: 2px solid gold;
