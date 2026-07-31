@@ -1,6 +1,6 @@
+
 body{
-    margin: 0; padding: 0; background: #121212; font-family: Arial, sans-serif; color: white; overflow-x: hidden;
-}
+    margin: 0; padding: 0; background: #121212; font-family: Arial, sans-serif; color: white; overflow-x: hidden;}
 header{
     text-align: center;  background-color: black; padding: 20px 0;
 }
@@ -21,48 +21,49 @@ margin:0 10px; border-radius: 50px; display: inline-block; font-size:18px; font-
      position: absolute;  transform: translate(-50%, -50%);  top: 50%; left:50%; width: 100%; text-align: center;
 }
 h1{
-    font-size: 60px; color: red; margin: 0; background: transparent;  width: 100%; line-height: 1.2; text-align: center;
+    font-size: 60px; color: red; margin: 0; background: transparent; 
+    width: 100%;  line-height: 1.2; text-align: center;
 }
 .a-a{ 
      font-size: 45px; color: red; margin: 10px 0 0 0; background: transparent; text-align: center; line-height: 1.5;
     }
 .card{
-    background-color: #1b1b1b; width: 100%; max-width:1100px; margin: 30px auto; border-radius: 15px; overflow: hidden; text-align: center;
+    background-color: #1b1b1b; width: 100%; max-width: 1100px; margin: 30px auto; border-radius: 15px; overflow: hidden; text-align: center;
     box-shadow: 0 0 15px rgba(0,255,255,0.3); padding: 10px; border: 2px solid #00d9ff; box-sizing: border-box;
 }
 .card h2{
-color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;                                                                          
+color: white; font-size: 40px; font-weight: bold;  text-align: center; margin: 10px 0; line-height: 1.2;                                                                                   
 }
 .card h3{
-    color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;
+    color: white; font-size: 40px; font-weight: bold;  text-align: center; margin: 10px 0; line-height: 1.2;
 }
 .image-box{
-    width: 100%; height: auto;  display: flex;  justify-content: center;  align-items: flex-start;  overflow: hidden; padding-top: 20px;
+    width: 100%; height: 450px;  display: flex;  justify-content: center;  align-items: flex-start;  overflow: hidden; padding-top: 20px;
 }
 .image-box img{
     width: 100%;  height: auto;  object-fit: contain;  display: block;
 }
 .a-b{
-    color: white; background-color: #1e1e1e; font-size: 23px; text-align: center; margin: 10px 20px; line-height: 1.5;
+    color: white; background-color: #1e1e1e; font-size: 23px; text-align: center; margin: 10px 20px; line-height: 1.5; 
 }
-    .c-d{
-  color: white; background-color: #1e1e1e; font-size: 23px; text-align: center; margin: 10px 20px; line-height: 1.5;
-    }
-        .whatsapp-btn{
-    background-color: rgb(11, 224, 11); font-size: 30px; font-weight:bold; color: white; padding: 20px 40px; text-decoration: none;
-    border-radius: 999px; display: inline-block; margin-right: 10px;
+.c-d{
+    color: white; background-color: #1e1e1e; font-size: 23p; text-align: center; margin: 10px 20px; line-height: 1.5;
+}
+.whatsapp-btn{
+    background-color: rgb(11, 224, 11); font-size: 30px; font-weight: bold; color: white; padding: 20px 40px;
+     text-decoration: none; border-radius: 999px; display: inline-block; margin-right: 10px;
 }
 .call-btn{
     background-color: rgb(43, 43, 238); color: white; font-size: 35px; font-weight: bold; padding: 20px 60px;
-    border-radius: 999px; text-decoration: none; display: inline-block;
+     border-radius: 999px; text-decoration: none; display: inline-block;
 }
 .read-more{
-    display: inline-block; margin-top 10px; padding: 10px 20px; background-color: white; color: black; border: none 
+     display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: white;
+     color: black; border: none;
     border-radius:50px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s;
-    
 }
 .buttons{
-    text-align: center; margin-top: 20px; font-size: 50px;
+    text-align: center; margin-top: 20px; font-size: 30px;
 }
 .about h2{
     color: gold; font-size: 50px; 
@@ -86,8 +87,9 @@ color: white; font-size: 40px; text-align: center; margin: 10px 0; font-weight: 
 .contact a:hover{
     background-color: white; color: black;
 }
-.read-more:havor{ 
-    background-color: #cc0000;
+.read-more:havor{
+    background-color: white;
+}
 footer{
  background-color: #000;
     color: white; text-align: center; padding: 20px; margin-top: 40px; border-top: 2px solid gold;
@@ -97,9 +99,12 @@ footer p{
     font-size: 30px;
 }
 @media (max-width:
-        768px){
+ 768px){
+    .card{
+        width: 100%;
+    }
     .image-box{
-        height: auto;
+        height: 450px;
     }
     .image-box img{
         width: 100%;
@@ -107,16 +112,13 @@ footer p{
         object-fit: contain;
         display: block;
     }
-        .card{
-            width: 100%;
-        }
     h1{
         font-size: 45px;
     }
     .a-a{
         font-size: 35px;
     }
-    h2{
+     h2{
         font-size: 40px;
     }
     .a-b{
@@ -124,4 +126,28 @@ footer p{
         line-height: 1.5;
     }
     }
-    
+    #loader {
+        position: fixed; witdh: 100%; height: 100vh; background: #000;top: 0; left:0; display: flex; 
+        justify-content: center; align-items: center; z-index: 9999;
+    }
+    .loader-content{
+        witdh: 220px; height: 220px; border-radius: 50%; display: flex; flex-direction: column;
+         justify-content: center; align-items: center; position: relative; 
+    }
+    /* Red rotating circle 
+    */
+     .loader-content::before
+    {
+    content: ""; 
+    position: absolute; width: 220px; height: 220px; border-radius:  50%; border-top: 5pxx solid red;
+    border-right: 5px solid transparent; border-bottom: 5px solid red; border-left: 5px solid transparent;
+    animation: rotateLoader 2s linear infinite; box-shadow: 0 0 20px red;
+}
+    .loader-content h1{
+        color: red; font-size: 60px; margin: 0; text-shadow: 0 0 20px red; z-index: 1; }
+        .loader-content p{
+            color: white; font-size: 14px; text-align: center; z-index: 1; }
+            @keyframes rotateLoader{
+                from{
+                    transfom: rotate(0deg);  }  to { tranform: rotate(360deg); }
+            }
