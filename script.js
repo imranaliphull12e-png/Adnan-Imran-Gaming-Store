@@ -38,3 +38,29 @@ window.addEventListener("load", function () {
   });
 
 });
+const sparks = document.querySelector(".sparks");
+
+if (sparks) {
+
+  setInterval(function () {
+
+    const s = document.createElement("span");
+    s.className = "spark";
+
+    const angle = Math.random() * 360;
+    const distance = 235;
+
+    s.style.left = "50%";
+    s.style.top = "50%";
+    s.style.transform =
+      `rotate(${angle}deg) translate(${distance}px)`;
+
+    sparks.appendChild(s);
+
+    setTimeout(function () {
+      s.remove();
+    }, 500);
+
+  }, 80);
+
+}
