@@ -11,6 +11,7 @@ nav a{
 text-decoration: none; background-color: #0066cc; padding: 12px 22px; color: white; 
 margin:0 10px; border-radius: 50px; display: inline-block; font-size:18px; font-weight: bold;
 }
+.nav-whatsapp{ background-color: #25D366; font-weight: bold; font-size: 16px } .nav-whatsapp:hover{ color: white;}
 .hero{
     margin-bottom: 30px; position: relative;
 }
