@@ -48,7 +48,7 @@ color: white; font-size: 40px; font-weight: bold;  text-align: center; margin: 1
     color: white; background-color: #1e1e1e; font-size: 23px; text-align: center; margin: 10px 20px; line-height: 1.5; 
 }
 .c-d{
-    color: white; background-color: #1e1e1e; font-size: 23p; text-align: center; margin: 10px 20px; line-height: 1.5;
+    color: white; background-color: #1e1e1e; font-size: 23px; text-align: center; margin: 10px 20px; line-height: 1.5;
 }
 .whatsapp-btn{
     background-color: rgb(11, 224, 11); font-size: 30px; font-weight: bold; color: white; padding: 20px 40px;
@@ -83,7 +83,7 @@ color: white; font-size: 40px; font-weight: bold;  text-align: center; margin: 1
 .contact a:hover{
     background-color: white; color: black;
 }
-.read-more:havor{
+.read-more:hover{
     background-color: white;
 }
 footer{
@@ -94,29 +94,32 @@ footer p{
     margin: 0;
     font-size: 30px;
 }
-@media (max-width:
- 768px){
+@media (max-width: 768px){
     .card{  width: 100%; } .image-box{ height: 450px; }
     .image-box img{
         width: 100%;  height: auto;  object-fit: contain;  display: block;}
-        .whatsapp-btn, .call-btn {font-size:16px; padding: 12px 20px; }
+        .whatsapp-btn, .call-btn {font-size:16px; padding: 12px 20px; width: 90%; max-width: 320px; margin: 8px 0; 
+        box-sizing: border-box; }
+        .about p, 
+        .contact p{
+             font-size: 22px; line-height: 35px; } footer p {font-size: 18px; }
         .buttons{
-            display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;
-        }
-    h1{
-        font-size: 45px;
-    }
-    .a-a{
-        font-size: 35px;
-    }
-     h2{
-        font-size: 40px;
-    }
-    .a-b{
-        font-size: 23px;
-        line-height: 1.5;
-    }
-    }
+            display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;}
+
+            nav a{ display: block; width: 90%; margin: 10px auto; font-size: 18px;}
+            .hero-text{width: 95%; }
+            .card h1{
+                 font-size: 35px; }
+            .a-a{
+     font-size: 28px;}
+    .card h2 {font-size: 28px; }
+    .card h3 {font-size: 28px; }
+    .a-b,
+    .c-d{ font-size:20px;
+ }
+            }
+   
+
     #loader {
         position: fixed; width: 100%; height: 100vh; background: #000;top: 0; left:0; display: flex; 
         justify-content: center; align-items: center; z-index: 9999;
@@ -175,4 +178,12 @@ footer p{
         100%{
             transform: rotate(360deg) translateX(235px); opacity: 0;
         }
+            }
+            @media (max-width: 768px){
+            .loader-content{
+                width: 250px; height: 280px;
+            }
+            .loader-content::before{
+                width: 280px; height: 280px;
+            }
             }
