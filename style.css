@@ -22,11 +22,11 @@ margin:0 10px; border-radius: 50px; display: inline-block; font-size:18px; font-
      position: absolute;  transform: translate(-50%, -50%);  top: 50%; left:50%; width: 100%; text-align: center;
 }
 h1{
-    font-size: 60px; color: red; margin: 0; background: transparent; 
+    font-size: 48px; color: red; margin: 0; background: transparent; 
     width: 100%;  line-height: 1.2; text-align: center;
 }
 .a-a{ 
-     font-size: 45px; color: red; margin: 10px 0 0 0; background: transparent; text-align: center; line-height: 1.5;
+     font-size: 35px; color: red; margin: 10px 0 0 0; background: transparent; text-align: center; line-height: 1.5;
     }
 .card{
     background-color: #1b1b1b; width: 100%; max-width: 1100px; margin: 30px auto; border-radius: 15px; overflow: hidden; text-align: center;
@@ -42,7 +42,7 @@ color: white; font-size: 40px; font-weight: bold;  text-align: center; margin: 1
     width: 100%; height: 100%;  display: flex;  justify-content: center;  align-items: flex-start;  overflow: hidden; padding-top: 20px;
 }
 .image-box img{
-    width: 100%;  height: 450px;  object-fit: contain;  display: block;
+    width: 100%;  height: auto;  object-fit: contain;  display: block;
 }
 .a-b{
     color: white; background-color: #1e1e1e; font-size: 23px; text-align: center; margin: 10px 20px; line-height: 1.5; 
@@ -97,7 +97,7 @@ footer p{
 @media (max-width: 768px){
     .card{  width: 100%; } .image-box{ height: 450px; }
     .image-box img{
-        width: 300px;  height: 450px;  object-fit: contain;  display: block;}
+        width: 100%;  height: auto;  object-fit: contain;  display: block;}
         .whatsapp-btn, .call-btn {font-size:16px; padding: 12px 20px; width: 90%; max-width: 320px; margin: 8px 0; 
         box-sizing: border-box; }
         .about p, 
@@ -111,11 +111,11 @@ footer p{
              h1{
                  font-size: 35px; }
             .a-a{
-     font-size: 28px;}
-    .card h2 {font-size: 28px; }
-    .card h3 {font-size: 28px; }
+     font-size: 26px;}
+    .card h2 {font-size: 18px; }
+    .card h3 {font-size: 18px; }
     .a-b,
-    .c-d{ font-size:20px;
+    .c-d{ font-size:13px;
  }
             }
    
@@ -145,17 +145,16 @@ footer p{
            
             @keyframes rotateLoader{
                 from{
-          transform: rotate(0deg);  }  to { transform: rotate(360deg); }
-            }
-            .loader-content img{
-                width: 320px; height: 190px; display: block; position: relative; z-index: 2; }
-                @keyframes glowFire {
-                    from{
-                    box-shadow: 0 0 15px #ff0000,  0 0 30px #ff3300, 0 0 50px #ff6600;
-                }
-                to{ box-shadow: 0 0 30px #ff0000, 0 0 60px #ff3300, 0 0 90px #ff6600, 0 0 120px #ffcc00;
-                }
-            }
+                      transform: rotate(0deg);  }  to { transform: rotate(360deg); }
+   }
+  .loader-content img{
+    width: 320px; height: 190px; display: block; position: relative; z-index: 2; }
+ @keyframes glowFire {
+  from{
+   box-shadow: 0 0 15px #ff0000,  0 0 30px #ff3300, 0 0 50px #ff6600;
+ }
+  to{ box-shadow: 0 0 30px #ff0000, 0 0 60px #ff3300, 0 0 90px #ff6600, 0 0 120px #ffcc00;     }
+  }
             .sparks{
     position:absolute;
     width:470px;
