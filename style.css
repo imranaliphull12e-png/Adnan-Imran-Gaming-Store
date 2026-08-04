@@ -22,11 +22,11 @@ margin: 2px; border-radius: 50px; display: inline-block; font-size:8px; font-wei
      max-width: 90%; margin: 0 auto;
 }
 h1{
-    font-size: 15px; color: red; margin: 0; background: transparent;  width: 100%; line-height: 1.2; 
+    font-size: 40px; color: red; margin: 0; background: transparent;  width: 100%; line-height: 1.2; 
     text-align: center;
 }
 .a-a{ 
-     font-size: 6px; color: red; margin: 10px 0 0 0; background: transparent; text-align: center; 
+     font-size: 18px; color: red; margin: 10px 0 0 0; background: transparent; text-align: center; 
      line-height: 1.4;
     }
 .card{
@@ -35,31 +35,31 @@ h1{
     padding: 10px; border: 2px solid #00d9ff; box-sizing: border-box;
 }
 .card h2{
-color: white; font-size: 15px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;                                                                          
+color: white; font-size: 18px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;                                                                          
 }
 .card h3 {
-    color: white; font-size: 15px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;
+    color: white; font-size: 18px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;
 }
 .image-box{
     width: 100%; height: auto;  display: flex;  justify-content: center;  align-items: flex-start;  overflow: hidden; padding-top: 20px;
 }
 .image-box img{
-    width: 100%;  height: auto;  object-fit: contain;  display: block;
+    width: 100%;  height: 400;  object-fit: contain;  display: block;
 }
 .a-b{
-    color: white; background-color: #1e1e1e; font-size: 8px; text-align: center; margin: 10px 20px; 
+    color: white; background-color: #1e1e1e; font-size: 10px; text-align: center; margin: 10px 20px; 
     line-height: 1.5;
 }
     .c-d{
-        color: white; background-color: #1e1e1e; font-size: 8px; text-align: center;
+        color: white; background-color: #1e1e1e; font-size: 10px; text-align: center;
          margin: 10px 20px; line-height: 1.5; }
 .whatsapp-btn{
     background-color: rgb(11, 224, 11); font-size: 12px; font-weight: bold; color: white; padding: 8px 14px; text-decoration: none;
-    border-radius: 999px; display: inline-block; margin-right: 10px;
+    border-radius: 20px; display: inline-block; margin-right: 10px;
 }
 .call-btn{
     background-color: rgb(43, 43, 238); color: white; font-size: 12px; font-weight: bold; padding: 8% 16px;
-    border-radius: 999px; text-decoration: none; display: inline-block;
+    border-radius: 20px; text-decoration: none; display: inline-block;
 }
 .buttons{
     text-align: center; margin-top: 20px; font-size: 12px;
