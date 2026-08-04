@@ -58,7 +58,7 @@ color: white; font-size: 18px; text-align: center; margin: 5px 0; font-weight: b
     border-radius: 20px; display: inline-block; margin-right: 10px;
 }
 .call-btn{
-    background-color: rgb(43, 43, 238); color: white; font-size: 12px; font-weight: bold; padding: 8px 18px;
+    background-color: rgb(43, 43, 238); color: white; font-size: 12px; font-weight: bold; padding: 12px 24px;
     border-radius: 20px; text-decoration: none; display: inline-block; 
 }
 .buttons{
