@@ -18,15 +18,15 @@ margin: 2px; border-radius: 50px; display: inline-block; font-size:8px; font-wei
     width: 100%; height: 350px;  display: block;
 }
 .hero-text{
-     position: absolute;  transform: translate(-50%, -50%);  top: 30%; left:50%; width: 100%; text-align: center;
+     position: absolute;  transform: translate(-50%, -50%);  top: 20%; left:50%; width: 100%; text-align: center;
      max-width: 90%; margin: 0 auto;
 }
 h1{
-    font-size: 40px; color: red; margin: 0; background: transparent;  width: 100%; line-height: 1.2; 
+    font-size: 50px; color: red; margin: 0; background: transparent;  width: 100%; line-height: 1.2; 
     text-align: center;
 }
 .a-a{ 
-     font-size: 18px; color: red; margin: 10px 0 0 0; background: transparent; text-align: center; 
+     font-size: 22px; color: gold; margin: 10px 0 0 0; background: transparent; text-align: center; 
      line-height: 1.4;
     }
 .card{
@@ -58,8 +58,8 @@ color: white; font-size: 18px; text-align: center; margin: 5px 0; font-weight: b
     border-radius: 20px; display: inline-block; margin-right: 10px;
 }
 .call-btn{
-    background-color: rgb(43, 43, 238); color: white; font-size: 12px; font-weight: bold; padding: 8px 14px;
-    border-radius: 20px; text-decoration: none; display: inline-block;
+    background-color: rgb(43, 43, 238); color: white; font-size: 12px; font-weight: bold; padding: 8px 18px;
+    border-radius: 20px; text-decoration: none; display: inline-block; 
 }
 .buttons{
     text-align: center; margin-top: 10px; margin-bottom: 10px; font-size: 12px;
