@@ -94,8 +94,7 @@ footer p{
     margin: 0;
     font-size: 16px;
 }
-@media (max-width:
-        768px){
+@media (min-width: 768px){
     .image-box{
         height: auto;
     }
