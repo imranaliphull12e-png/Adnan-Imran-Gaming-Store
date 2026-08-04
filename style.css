@@ -95,7 +95,8 @@ footer p{
     font-size: 30px;
 }
 @media (max-width:768px){
-
+nav{
+    font-size: 12px; }
 nav a{ display:block; width:90%; margin:10px auto; font-size:10px; }
 
 .hero-text{ width:95%; }
