@@ -37,7 +37,7 @@ h1{
 .card h2{
 color: white; font-size: 15px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;                                                                          
 }
-.card h3{
+.card h3 {
     color: white; font-size: 15px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;
 }
 .image-box{
@@ -47,11 +47,12 @@ color: white; font-size: 15px; text-align: center; margin: 10px 0; font-weight: 
     width: 100%;  height: auto;  object-fit: contain;  display: block;
 }
 .a-b{
-    color: white; background-color: #1e1e1e; font-size:8px; text-align: center; margin: 10px 20px; line-height: 1.5;
+    color: white; background-color: #1e1e1e; font-size: 8px; text-align: center; margin: 10px 20px; 
+    line-height: 1.5;
 }
     .c-d{
         color: white; background-color: #1e1e1e; font-size: 8px; text-align: center;
-         margin: 10px 20px; line-height: 1.5;}
+         margin: 10px 20px; line-height: 1.5; }
 .whatsapp-btn{
     background-color: rgb(11, 224, 11); font-size: 12px; font-weight: bold; color: white; padding: 8px 14px; text-decoration: none;
     border-radius: 999px; display: inline-block; margin-right: 10px;
