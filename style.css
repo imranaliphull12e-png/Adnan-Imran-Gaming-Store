@@ -12,7 +12,7 @@ nav a{
 .hero{
     position:relative; width: 100%; 
 }
-.hero-img{ width: 300%; height: 300px; display: block; 
+.hero-img{ width: 300%; height: 300px; display: block; object-fit: contain;
 }
 .hero h1 {
     position: absolute; top: 35%; left: 50%; transform: translateX(-50%); color: white; font-size: 40px;
