@@ -4,7 +4,7 @@ nav{
 }
 nav a{
     text-decoration: none; color:#fff; background: #0066cc; padding: 12px; border-radius: 50px;
-    font-size: 16px; font-weight: bold;
+    font-size: 12px; font-weight: bold;
 }
 .nav-whatsapp{ background: #25d366;
  }
@@ -12,7 +12,7 @@ nav a{
 .hero{
     position:relative; width: 100%; 
 }
-.hero-img{ width: 100%; height: auto; display: block; 
+.hero-img{ width: 100%; height: 400px; display: block; 
 }
 .hero h1 {
     position: absolute; top: 35%; left: 50%; transform: translateX(-50%); color: white; font-size: 40px;
