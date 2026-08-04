@@ -106,7 +106,7 @@ h1{ font-size:35px; }
 .a-a{ font-size:28px; }
 
 .card{ width: 310px; height: auto; }
-.image-box{ height:450px; 
+.image-box{ height:450px; }
  
 .image-box img{ width:300px; height:450px; object-fit:contain; }
 
