@@ -1,5 +1,5 @@
 body{
-    margin: 0; padding: 0; background: #121212; font-family: Arial, sans-serif; color: white; overflow-x: hidden;
+    margin: 0; padding: 0; background: blue; font-family: Arial, sans-serif; color: white; overflow-x: hidden;
 }
 header{
     text-align: center;  background-color: black; padding: 20px 0;
@@ -35,10 +35,10 @@ h1{
     padding: 10px; border: 2px solid #00d9ff; box-sizing: border-box;
 }
 .card h2{
-color: white; font-size: 18px; text-align: center; margin: 5px 0; font-weight: bold; line-height: 1.2;                                                                          
+color: yellow; font-size: 18px; text-align: center; margin: 5px 0; font-weight: bold; line-height: 1.2;                                                                          
 }
 .card h3 {
-    color: white; font-size: 18px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;
+    color: yellow; font-size: 18px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;
 }
 .image-box{
     width: 100%; height: auto;  display: flex;  justify-content: center;  align-items: flex-start;  overflow: hidden; padding-top: 20px;
@@ -94,7 +94,24 @@ footer p{
     margin: 0;
     font-size: 16px;
 }
+hr{ border: none; height: 2px; background: yellow; margin: 20px; }
 @media (min-width: 768px){
+      nav{
+    text-align: center; padding: 30px; background-color: #1a1a1a;
+}
+nav a{
+text-decoration: none; background-color: #0066cc; padding: 20px 40px; color: white; 
+margin: 2px; border-radius: 50px; display: inline-block; font-size:20px; font-weight: bold;
+}
+    .hero-img{
+        width: 100%; height: 500px;
+    }
+    .hero-text{ font-size: 70px; color: red, gold; margin-top: 20px; 
+    }
+    .a-a{
+        font-size: 45px; color: yellow; margin-top: 22px;
+    }
+
     .image-box{
         height: auto;
     }
@@ -108,16 +125,29 @@ footer p{
             width: 100%;
         }
     h1{
-        font-size: 45px;
+        font-size: 85px; color: red;
     }
     .a-a{
-        font-size: 35px;
+        font-size: 55px;
     }
-    h2{
-        font-size: 40px;
+   .card h2{
+        font-size: 45px; color: yellow; 
+       }
+     .card h3{
+        font-size: 45px; color: white;
+       }
+    .a-b,
+    .c-d{ 
+        font-size: 30px; line-height: 1.5; color: white;
     }
-    .a-b{
-        font-size: 23px;
-        line-height: 1.5;
+    .call-btn,
+    .whatsapp-btn{
+        font-size: 25px; padding: 20px 40px;
     }
+    .about h2{
+    color: gold; font-size: 26px; 
+}
+.about p{
+    color: white; font-size: 18px; max-width: 700px; margin: auto; line-height: 30px; text-align: center;
+}
     }
