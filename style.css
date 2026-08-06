@@ -1,6 +1,112 @@
 body{
     margin: 0; padding: 0; background: blue; font-family: Arial, sans-serif; color: white; overflow-x: hidden;
 }
+#loader{
+    position:fixed;
+     top: 0; 
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: black;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     z-index: 9999;
+}
+.loader-ring{
+    width: 260px;
+    height: 260px;
+    border: 8px solid transparent;
+    border-top: 8px solid #00d9ff;
+    border-right: 8px solid gold;
+    border-radius: 50%; 
+    animation: rotateLoader 1.5s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.loader-logo{
+    position: absolute;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px #00d9ff, 0 0 20px gold;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loader-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0; 
+    padding: 5px;
+    font-size: 22px;
+    color: gold;
+    font-weight: bold;
+    text-align: left;
+}
+.loader-subtitle{
+    position: absolute;
+    top: 35px; 
+    left: 3;
+    margin: 0; 
+    padding: 5px;
+    font-size: 19px;
+    color: blue; 
+    text-align: left;
+}
+@keyframes rotateLoader {
+   from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.outer-ring {
+    width: 220px;
+    height: 220px;
+    border: 6px solid #00bfff; 
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px gainsboro;
+}
+.inner-ring {
+    width: 180px;
+    height: 180px;
+    border: 5px solid #ffd700;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    box-shadow: 0 0 20px #ffd700;
+}
+.loader-circle {
+    width: 300px; 
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+.loading {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: greenyellow;
+    text-align: center; 
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 header{
     text-align: center;  background-color: black; padding: 20px 0;
 }
@@ -44,7 +150,7 @@ color: yellow; font-size: 18px; text-align: center; margin: 5px 0; font-weight: 
     width: 100%; height: auto;  display: flex;  justify-content: center;  align-items: flex-start;  overflow: hidden; padding-top: 20px;
 }
 .image-box img{
-    width: 100%;  height: 400;  object-fit: contain;  display: block;
+    width: 100%;  height: 400px;  object-fit: contain;  display: block;
 }
 .a-b{
     color: white; background-color: #1e1e1e; font-size: 10px; text-align: center; margin: 5px 15px; 
@@ -106,7 +212,7 @@ margin: 2px; border-radius: 50px; display: inline-block; font-size:20px; font-we
     .hero-img{
         width: 100%; height: 500px;
     }
-    .hero-text{ font-size: 70px; color: red, gold; margin-top: 20px; 
+    .hero-text{ font-size: 70px; color: red; margin-top: 20px; 
     }
     .a-a{
         font-size: 45px; color: yellow; margin-top: 22px;
@@ -115,21 +221,11 @@ margin: 2px; border-radius: 50px; display: inline-block; font-size:20px; font-we
     .image-box{
         height: auto;
     }
-    .image-box img{
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        display: block;
+    .image-box img{  width: 100%;  height: auto;  object-fit: contain;  display: block;
     }
         .card{
             width: 100%;
         }
-    h1{
-        font-size: 85px; color: red;
-    }
-    .a-a{
-        font-size: 55px;
-    }
    .card h2{
         font-size: 45px; color: yellow; 
        }
