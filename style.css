@@ -1,5 +1,7 @@
 body{
     margin: 0; padding: 0; background: blue; font-family: Arial, sans-serif; color: white; overflow-x: hidden;
+}.section-image {
+    width: 100%; height: 400px; max-width: 400px; object-fit: cover; display: block; margin: auto;
 }
 header{
     text-align: center;  background-color: black; padding: 20px 0;
@@ -37,22 +39,34 @@ h1{
 .card h2{
 color: yellow; font-size: 18px; text-align: center; margin: 5px 0; font-weight: bold; line-height: 1.2;                                                                          
 }
+
 .card h3 {
     color: yellow; font-size: 18px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;
 }
+
 .image-box{
     width: 100%; height: auto;  display: flex;  justify-content: center;  align-items: flex-start;  overflow: hidden; padding-top: 20px;
 }
+
 .image-box img{
     width: 100%;  height: 400px;  object-fit: contain;  display: block;
 }
+
 .a-b{
     color: white; background-color: #1e1e1e; font-size: 10px; text-align: center; margin: 5px 15px; 
     line-height: 1.5;
 }
+
     .c-d{
         color: white; background-color: #1e1e1e; font-size: 10px; text-align: center;
          margin: 10px 20px; line-height: 1.5; }
+
+h4 { color: red; font-size: 22px; text-align: center; margin: 10px 0 15px 0;
+font-weight: bold; line-height: 1.2; }
+
+.e-f { color: white;  font-size: 16px; text-align: center; line-height: 1.7; margin: 10px 15px;
+}
+
 .whatsapp-btn{
     background-color: rgb(11, 224, 11); font-size: 12px; font-weight: bold; color: white; padding: 8px 14px; text-decoration: none;
     border-radius: 20px; display: inline-block; margin-right: 10px;
@@ -93,6 +107,38 @@ footer{
 footer p{
     margin: 0;
     font-size: 16px;
+}
+/* Floating Call & WhatsApp Buttons */
+
+.floating-buttons {
+  position: fixed;
+  right: -8px;
+  bottom: 25px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.floating-buttons a {
+  width: 125px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 15px;
+  border-radius: 30px 0 0 30px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white; 
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5); transition: 0.3s;
+}
+.floating-buttons a:first-child{
+    background: rgb(3, 171, 212);
+}
+.floating-buttons a:last-child{
+    background: rgb(15, 247, 15);
 }
 hr{ border: none; height: 2px; background: yellow; margin: 20px; }
 @media (min-width: 768px){
