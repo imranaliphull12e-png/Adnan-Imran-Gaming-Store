@@ -3,6 +3,28 @@ body{
 }.section-image {
     width: 100%; height: 400px; max-width: 400px; object-fit: cover; display: block; margin: auto;
 }
+.home-content {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    text-align: center;
+    z-index: 2;
+}
+
+.home-content h4 {
+    color: red;
+    font-size: 22px;
+    margin: 0 0 15px 0;
+}
+
+.home-text {
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 8px 10px;
+}
 header{
     text-align: center;  background-color: black; padding: 20px 0;
 }
@@ -135,7 +157,7 @@ footer p{
   box-shadow: 0 4px 12px rgba(0,0,0,0.5); transition: 0.3s;
 }
 .floating-buttons a:first-child{
-    background: rgb(3, 171, 212);
+    background: rgb(27, 109, 216);
 }
 .floating-buttons a:last-child{
     background: rgb(15, 247, 15);
