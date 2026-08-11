@@ -1,58 +1,30 @@
 body{
-    margin: 0; padding: 0; background: blue; font-family: Arial, sans-serif; color: white; overflow-x: hidden;
+    margin: 0; padding: 0; background: blue; font-family: Arial, sans-serif; color: white; 
+    overflow-x: hidden;
 }.section-image {
     width: 100%; height: 400px; max-width: 400px; object-fit: cover; display: block; margin: auto;
-}
-.home-content {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 85%;
-    text-align: center;
-    z-index: 2;
-}
-
-.home-content h4 {
-    color: red;
-    font-size: 22px;
-    margin: 0 0 15px 0;
-}
-
-.home-text {
-    color: white;
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 8px 10px;
 }
 header{
     text-align: center;  background-color: black; padding: 20px 0;
 }
     nav{
-    text-align: center; padding: 15px; background-color: #1a1a1a;
+    width: 300px; height: 400px; text-align: center; padding: 15px; background-color: goldenrod;
+     position: relative;
+    }
+H5 { color: white; background-color: #0066cc; font-size: 16px; text-align: center; margin: 4px 8px;}
+
+h4 { color: gold; font-size: 12px; text-align: center; margin: 5px 0 10px 0;
+font-weight: bold; line-height: 1.4; }
+
+.e-f { color: whitesmoke;  font-size: 8px; text-align: center; line-height: 1.4; margin: 5px 10px;
 }
-nav a{
-text-decoration: none; background-color: #0066cc; padding: 8px 8px; color: white; 
-margin: 2px; border-radius: 50px; display: inline-block; font-size:8px; font-weight: bold;
-}
+
 .hero{
     margin-bottom: 30px; position: relative;
 }
 .hero-img{
     width: 100%; height: 350px;  display: block;
 }
-.hero-text{
-     position: absolute;  transform: translate(-50%, -50%);  top: 20%; left:50%; width: 100%; text-align: center;
-     max-width: 90%; margin: 0 auto;
-}
-h1{
-    font-size: 50px; color: red; margin: 0; background: transparent;  width: 100%; line-height: 1.2; 
-    text-align: center;
-}
-.a-a{ 
-     font-size: 22px; color: gold; margin: 10px 0 0 0; background: transparent; text-align: center; 
-     line-height: 1.4;
-    }
 .card{
     background-color: #1b1b1b; width: 100%; max-width:1100px;margin: 30px auto;
     border-radius: 15px; overflow: hidden; text-align: center;  box-shadow: 0 0 15px rgba(0,255,255,0.3); 
@@ -83,11 +55,6 @@ color: yellow; font-size: 18px; text-align: center; margin: 5px 0; font-weight: 
         color: white; background-color: #1e1e1e; font-size: 10px; text-align: center;
          margin: 10px 20px; line-height: 1.5; }
 
-h4 { color: red; font-size: 22px; text-align: center; margin: 10px 0 15px 0;
-font-weight: bold; line-height: 1.2; }
-
-.e-f { color: white;  font-size: 16px; text-align: center; line-height: 1.7; margin: 10px 15px;
-}
 
 .whatsapp-btn{
     background-color: rgb(11, 224, 11); font-size: 12px; font-weight: bold; color: white; padding: 8px 14px; text-decoration: none;
@@ -172,13 +139,14 @@ text-decoration: none; background-color: #0066cc; padding: 20px 40px; color: whi
 margin: 2px; border-radius: 50px; display: inline-block; font-size:20px; font-weight: bold;
 }
     .hero-img{
-        width: 100%; height: 500px;
+        width: 100%; height: auto; 
     }
-    .hero-text{ font-size: 70px; color: red; margin-top: 20px; 
+    .hero-text{ font-size: 70px; color: whitesmoke; 
     }
     .a-a{
-        font-size: 45px; color: yellow; margin-top: 22px;
+        font-size: 45px; color: yellow;  margin-right: 5%; margin-top: 50px;
     }
+
 
     .image-box{
         height: auto;
