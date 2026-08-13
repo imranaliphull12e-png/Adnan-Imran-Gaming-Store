@@ -1,7 +1,8 @@
 body{
     margin: 0; padding: 0; background: blue; font-family: Arial, sans-serif; color: white; 
     overflow-x: hidden;
-}.section-image {
+}
+.section-image {
     width: 100%; height: 400px; max-width: 400px; object-fit: cover; display: block; margin: auto;
 }
 header{
@@ -11,31 +12,39 @@ header{
     width: 100%; height: 400px; text-align: center; padding: 15px; background-color: black;
      position: relative;
     }
-H5 { color: white; background-color: #0066cc; font-size: 16px; text-align: center; margin: 4px 8px;}
+H1 { color: white; background-color: #0066cc; font-size: 17px; text-align: center; margin: 4px 8px;}
 
-h4 { color: gold; font-size: 12px; text-align: center; margin: 5px 0 10px 0;
+.a { color: gold; font-size: 14px; text-align: center; margin: 5px 0 10px 0;
 font-weight: bold; line-height: 1.4; }
 
-.e-f { color: whitesmoke;  font-size: 10px; text-align: center; line-height: 1.4; margin: 5px 10px;
+.b { color: whitesmoke;  font-size: 12px; text-align: center; line-height: 1.4; margin: 5px 10px;
 }
-
-.hero{
-    margin-bottom: 30px; position: relative;
+.hero-image {
+ position: relative; width: 100%; height: 400px;
 }
 .hero-img{
-    width: 100%; height: 400px;  display: block;
+    width: 100%; height: 400px;  display: block; 
 }
-.card{
+
+.hero-text {
+    position: absolute; top: 0; left: 0;  width: 100%; height: 400px; text-align: center; z-index: 10; 
+}
+
+.hero-text h2{
+        font-size: 20px; color: gold; text-align: center;  margin: 8px 10px;
+    }
+   .hero-text .aa{
+        font-size: 12px; color: rgb(10, 236, 29); text-align: center; margin: 10px 20px; line-height: 1.4;
+    }
+
+.product-card {
     background-color: #1b1b1b; width: 100%; max-width:1100px;margin: 30px auto;
     border-radius: 15px; overflow: hidden; text-align: center;  box-shadow: 0 0 15px rgba(0,255,255,0.3); 
     padding: 10px; border: 2px solid #00d9ff; box-sizing: border-box;
 }
-.card h2{
-color: yellow; font-size: 18px; text-align: center; margin: 5px 0; font-weight: bold; line-height: 1.2;                                                                          
-}
 
-.card h3 {
-    color: yellow; font-size: 18px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;
+ h3 {
+    color: yellow; font-size: 20px; text-align: center; margin: 10px 0; font-weight: bold; line-height: 1.2;
 }
 
 .image-box{
@@ -46,16 +55,9 @@ color: yellow; font-size: 18px; text-align: center; margin: 5px 0; font-weight: 
     width: 100%;  height: 400px;  object-fit: contain;  display: block;
 }
 
-.a-b{
-    color: white; background-color: #1e1e1e; font-size: 10px; text-align: center; margin: 5px 15px; 
-    line-height: 1.5;
+.c {
+    color: white;  font-size: 15px; text-align: center; margin: 5px 15px; line-height: 1.5; 
 }
-
-    .c-d{
-        color: white; background-color: #1e1e1e; font-size: 10px; text-align: center;
-         margin: 10px 20px; line-height: 1.5; }
-
-
 .whatsapp-btn{
     background-color: rgb(11, 224, 11); font-size: 12px; font-weight: bold; color: white; padding: 8px 14px; text-decoration: none;
     border-radius: 20px; display: inline-block; margin-right: 10px;
@@ -68,10 +70,10 @@ color: yellow; font-size: 18px; text-align: center; margin: 5px 0; font-weight: 
     text-align: center; margin-top: 10px; margin-bottom: 10px; font-size: 12px;
 }
 .about h2{
-    color: gold; font-size: 18px; 
+    color: white; font-size: 18px; 
 }
 .about p{
-    color: gold; font-size: 10px; max-width: 700px; margin: auto; line-height: 30px; text-align: center;
+    color: white; font-size: 10px; max-width: 700px; margin: auto; line-height: 30px; text-align: center;
 }
 .contact{
     text-align: center; padding: 30px 15px;
@@ -80,7 +82,7 @@ color: yellow; font-size: 18px; text-align: center; margin: 5px 0; font-weight: 
     color: gold; font-size: 22px; margin-bottom: 20px; 
 }
 .contact p{
-    color: red; font-size: 15px; margin: 10px 0; text-align: center;
+    color: white; font-size: 15px; margin: 10px 0; text-align: center;
  }
 .contact a{
     display: inline-block; margin: 10px; padding: 8px 16px; background-color: gold;
@@ -124,62 +126,9 @@ footer p{
   box-shadow: 0 4px 12px rgba(0,0,0,0.5); transition: 0.3s;
 }
 .floating-buttons a:first-child{
-    background: rgb(27, 109, 216);
+    background: rgb(35, 35, 206);
 }
 .floating-buttons a:last-child{
     background: rgb(15, 247, 15);
 }
-hr{ border: none; height: 2px; background: yellow; margin: 20px; }
-@media (min-width: 768px){
-      nav{
-    text-align: center; padding: 30px; background-color: #1a1a1a;
-}
-nav a{
-text-decoration: none; background-color: #0066cc; padding: 20px 40px; color: white; 
-margin: 2px; border-radius: 50px; display: inline-block; font-size:20px; font-weight: bold;
-}
-    .hero-img{
-        width: 100%; height: auto; 
-    }
-    .hero-text{ font-size: 70px; color: whitesmoke; 
-    }
-    .a-a{
-        font-size: 45px; color: yellow;  margin-right: 5%; margin-top: 50px;
-    }
-
-
-    .image-box{
-        height: auto;
-    }
-    .image-box img{  width: 100%;  height: auto;  object-fit: contain;  display: block;
-    }
-        .card{
-            width: 100%;
-        }
-   .card h2{
-        font-size: 45px; color: yellow; 
-       }
-     .card h3{
-        font-size: 45px; color: white;
-       }
-    .a-b,
-    .c-d{ 
-        font-size: 30px; line-height: 1.5; color: white;
-    }
-    .call-btn,
-    .whatsapp-btn{
-        font-size: 25px; padding: 20px 40px;
-    }
-    .about h2{
-    color: gold; font-size: 36px; 
-}
-.about p{
-    color: white; font-size: 24px; max-width: 700px; margin: auto; line-height: 30px; text-align: center;
-}
-.contact h2{
-    text-align: center; font-size: 32px; color: yellow;  margin-bottom: 30px;
-}
-.contact p{
-    font-size: 22px; color: red; text-align: center;
-}
-    }
+hr{ border: none; height: 2px; background: rgb(12, 12, 158); margin: 20px; }
