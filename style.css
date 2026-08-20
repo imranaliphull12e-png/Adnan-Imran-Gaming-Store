@@ -925,10 +925,9 @@ section#CONTACT > a:hover {
     }
 
     .hero-img {
-        width: 100%;
+        width: 350px;
         height: 320px;
-        object-fit: cover;
-        object-position: center;
+        object-fit: contain;
         display: block;
     }
 
@@ -996,7 +995,7 @@ section#CONTACT > a:hover {
     .hero-text h2 {
         margin: 8px 0;
 
-        font-size: 8px;
+        font-size: 14px;
         line-height: 1.25;
     }
 
@@ -1005,7 +1004,7 @@ section#CONTACT > a:hover {
 
         color: white;
 
-        font-size: 6px;
+        font-size: 10px;
         line-height: 1.45;
     }
 
@@ -1017,8 +1016,7 @@ section#CONTACT > a:hover {
     .product-card {
 
         width: 350px;
-        max-width: calc(100% - 20px);
-
+        
         height: 420px;
 
         margin: 20px auto;
