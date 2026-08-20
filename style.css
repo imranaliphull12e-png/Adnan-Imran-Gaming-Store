@@ -896,6 +896,305 @@ section#CONTACT > a:hover {
         margin: 20px 0;
     }
 
+}
+/* =========================================
+   MOBILE - FINAL RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* =================================
+       HERO
+       ================================= */
+
+    .hero-image {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+
+    /* =================================
+       NAVIGATION
+       ================================= */
+
+    .main-nav {
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 98%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 5px;
+
+        z-index: 20;
+    }
+
+    .main-nav a {
+        padding: 7px 9px;
+
+        font-size: 12px;
+        font-weight: bold;
+
+        color: white;
+        background: rgba(0,0,0,0.80);
+
+        border: 1px solid white;
+        border-radius: 7px;
+
+        white-space: nowrap;
+    }
+
+
+    /* =================================
+       HERO TEXT
+       ================================= */
+
+    .hero-text {
+        position: absolute;
+
+        top: 75px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 92%;
+
+        text-align: center;
+
+        z-index: 10;
+
+        color: rgb(236,145,8);
+
+        text-shadow: 2px 2px 5px black;
+    }
+
+    .hero-text h2 {
+        margin: 8px 0;
+
+        font-size: 25px;
+        line-height: 1.25;
+    }
+
+    .hero-text .aa {
+        margin-top: 12px;
+
+        color: white;
+
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+
+    /* =================================
+       PRODUCT CARD
+       ================================= */
+
+    .product-card {
+
+        width: 350px;
+        max-width: calc(100% - 20px);
+
+        height: 420px;
+
+        margin: 20px auto;
+
+        padding: 12px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        background: #111;
+
+        border: 1px solid #333;
+
+        border-radius: 15px;
+
+        overflow: hidden;
+    }
+
+
+    /* =================================
+       PRODUCT IMAGE
+       ================================= */
+
+    .product-card .image-box {
+
+        width: 100%;
+        height: 165px;
+
+        overflow: hidden;
+
+        flex-shrink: 0;
+
+        border-radius: 10px;
+    }
+
+    .product-card .image-box img {
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        display: block;
+    }
+
+
+    /* =================================
+       PRODUCT HEADING
+       ================================= */
+
+    .product-card h3 {
+
+        color: gold;
+
+        text-align: center;
+
+        font-size: 20px;
+
+        line-height: 1.25;
+
+        margin: 8px 0 4px 0;
+
+        min-height: 50px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+    }
+
+
+    /* =================================
+       PRODUCT PARAGRAPH
+       ================================= */
+
+    .product-card p {
+
+        color: white !important;
+
+        font-size: 14px;
+
+        line-height: 1.4;
+
+        height: 105px;
+
+        overflow: hidden;
+
+        margin: 3px 0 5px 0;
+    }
+
+
+    /* =================================
+       WHATSAPP + CALL BUTTONS
+       ================================= */
+
+    .product-card .buttons,
+    .buttons {
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 10px;
+
+        margin-top: auto;
+
+        flex-shrink: 0;
+    }
+
+    .whatsapp-btn,
+    .call-btn {
+
+        padding: 7px 14px;
+
+        border-radius: 50px;
+
+        text-decoration: none;
+
+        font-size: 14px;
+
+        font-weight: bold;
+
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        min-width: 85px;
+    }
+
+
+    /* WhatsApp */
+
+    .whatsapp-btn {
+
+        background: #25D366;
+
+        color: white;
+    }
+
+
+    /* Call */
+
+    .call-btn {
+
+        background: #007bff;
+
+        color: white;
+    }
+
+
+    /* =================================
+       PRODUCT DIVIDER
+       ================================= */
+
+    .product-divider {
+
+        clear: both;
+
+        width: 100%;
+
+        height: 1px;
+
+        border: 0;
+
+        background: #444;
+
+        margin: 20px 0;
+    }
+
 
     /* =================================
        HOME / ABOUT / SERVICE / CONTACT
