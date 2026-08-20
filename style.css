@@ -598,20 +598,132 @@ section#CONTACT > a:hover {
 
     transform: translateY(-2px);
 }
-
-
-
-/* =================================
-   MOBILE PRODUCT CARDS
-   ================================= */
+/* =========================================
+   MOBILE - FINAL RESPONSIVE DESIGN
+   ========================================= */
 
 @media (max-width: 768px) {
 
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* =================================
+       HERO
+       ================================= */
+
+    .hero-image {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+
+    /* =================================
+       NAVIGATION
+       ================================= */
+
+    .main-nav {
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 98%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 5px;
+
+        z-index: 20;
+    }
+
+    .main-nav a {
+        padding: 7px 9px;
+
+        font-size: 12px;
+        font-weight: bold;
+
+        color: white;
+        background: rgba(0,0,0,0.80);
+
+        border: 1px solid white;
+        border-radius: 7px;
+
+        white-space: nowrap;
+    }
+
+
+    /* =================================
+       HERO TEXT
+       ================================= */
+
+    .hero-text {
+        position: absolute;
+
+        top: 75px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 92%;
+
+        text-align: center;
+
+        z-index: 10;
+
+        color: rgb(236,145,8);
+
+        text-shadow: 2px 2px 5px black;
+    }
+
+    .hero-text h2 {
+        margin: 8px 0;
+
+        font-size: 25px;
+        line-height: 1.25;
+    }
+
+    .hero-text .aa {
+        margin-top: 12px;
+
+        color: white;
+
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+
+    /* =================================
+       PRODUCT CARD
+       ================================= */
+
     .product-card {
+
         width: 350px;
+        max-width: calc(100% - 20px);
+
         height: 420px;
 
-        margin: 15px auto;
+        margin: 20px auto;
+
         padding: 12px;
 
         box-sizing: border-box;
@@ -620,226 +732,450 @@ section#CONTACT > a:hover {
         flex-direction: column;
 
         background: #111;
+
         border: 1px solid #333;
-        border-radius: 12px;
+
+        border-radius: 15px;
 
         overflow: hidden;
     }
 
 
-    /* IMAGE */
+    /* =================================
+       PRODUCT IMAGE
+       ================================= */
 
     .product-card .image-box {
+
         width: 100%;
-        height: 155px;
+        height: 165px;
 
         overflow: hidden;
+
         flex-shrink: 0;
 
-        border-radius: 8px;
+        border-radius: 10px;
     }
 
     .product-card .image-box img {
+
         width: 100%;
         height: 100%;
 
         object-fit: cover;
+
         display: block;
     }
 
 
-    /* HEADING */
+    /* =================================
+       PRODUCT HEADING
+       ================================= */
 
     .product-card h3 {
-        color: gold !important;
+
+        color: gold;
 
         text-align: center;
 
-        font-size: 17px;
+        font-size: 20px;
+
         line-height: 1.25;
 
-        height: 45px;
+        margin: 8px 0 4px 0;
 
-        margin: 8px 0 5px 0;
+        min-height: 50px;
 
-        overflow: hidden;
-        flex-shrink: 0;
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
     }
 
 
-    /* PARAGRAPH */
+    /* =================================
+       PRODUCT PARAGRAPH
+       ================================= */
 
     .product-card p {
+
         color: white !important;
 
-        font-size: 13px;
+        font-size: 14px;
+
         line-height: 1.4;
 
-        height: 125px;
-
-        margin: 3px 0 8px 0;
+        height: 105px;
 
         overflow: hidden;
-        flex-shrink: 0;
+
+        margin: 3px 0 5px 0;
     }
 
 
-    /* BUTTON AREA */
+    /* =================================
+       WHATSAPP + CALL BUTTONS
+       ================================= */
 
-    .product-card .buttons {
+    .product-card .buttons,
+    .buttons {
+
         display: flex;
 
         justify-content: center;
+
         align-items: center;
 
         gap: 10px;
 
         margin-top: auto;
 
-        padding-bottom: 2px;
+        flex-shrink: 0;
     }
 
+    .whatsapp-btn,
+    .call-btn {
 
-    /* WHATSAPP */
-
-    .product-card .whatsapp-btn {
-        background: #25D366 !important;
-
-        color: white !important;
-
-        padding: 6px 12px;
+        padding: 7px 14px;
 
         border-radius: 50px;
 
         text-decoration: none;
 
-        font-size: 13px;
+        font-size: 14px;
+
         font-weight: bold;
 
         display: inline-flex;
 
         align-items: center;
+
         justify-content: center;
+
+        min-width: 85px;
     }
 
 
-    /* CALL */
+    /* WhatsApp */
 
-    .product-card .call-btn {
-        background: #007bff !important;
+    .whatsapp-btn {
 
-        color: white !important;
+        background: #25D366;
 
-        padding: 6px 12px;
-
-        border-radius: 50px;
-
-        text-decoration: none;
-
-        font-size: 13px;
-        font-weight: bold;
-
-        display: inline-flex;
-
-        align-items: center;
-        justify-content: center;
+        color: white;
     }
 
 
-    /* MOBILE DIVIDER */
+    /* Call */
+
+    .call-btn {
+
+        background: #007bff;
+
+        color: white;
+    }
+
+
+    /* =================================
+       PRODUCT DIVIDER
+       ================================= */
 
     .product-divider {
+
+        clear: both;
+
         width: 100%;
 
-        margin: 20px 0;
+        height: 1px;
 
         border: 0;
 
+        background: #444;
+
+        margin: 20px 0;
+    }
+
+
+    /* =================================
+       HOME / ABOUT / SERVICE / CONTACT
+       ================================= */
+
+    section#HOME,
+    section#ABOUT,
+    section#SERVICE,
+    section#CONTACT {
+
+        width: calc(100% - 20px) !important;
+
+        max-width: 100% !important;
+
+        margin: 25px auto !important;
+
+        padding: 22px 15px !important;
+
+        box-sizing: border-box !important;
+
+        background: linear-gradient(
+            135deg,
+            #111827,
+            #243447
+        ) !important;
+
+        border: 2px solid #3b5268 !important;
+
+        border-radius: 15px !important;
+
+        text-align: center !important;
+
+        color: white !important;
+
+        box-shadow: 0 8px 20px rgba(0,0,0,0.45) !important;
+    }
+
+
+    /* =================================
+       SECTION HEADINGS
+       ================================= */
+
+    section#HOME h1,
+    section#ABOUT h1,
+    section#SERVICE h1,
+    section#CONTACT h1 {
+
+        color: gold !important;
+
+        font-size: 27px !important;
+
+        line-height: 1.25 !important;
+
+        margin: 0 0 12px 0 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* =================================
+       SECTION PARAGRAPHS
+       ================================= */
+
+    section#HOME p,
+    section#ABOUT p,
+    section#SERVICE p,
+    section#CONTACT p {
+
+        color: white !important;
+
+        font-size: 16px !important;
+
+        line-height: 1.55 !important;
+
+        margin: 8px 0 12px 0 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* First paragraph */
+
+    section#HOME p.a,
+    section#ABOUT p.a,
+    section#SERVICE p.a,
+    section#CONTACT p.a {
+
+        color: #00d9ff !important;
+
+        font-weight: bold !important;
+    }
+
+
+    /* =================================
+       BACK TO MENU
+       ================================= */
+
+    section#HOME > a,
+    section#ABOUT > a,
+    section#SERVICE > a,
+    section#CONTACT > a {
+
+        display: inline-block !important;
+
+        margin-top: 15px !important;
+
+        padding: 9px 20px !important;
+
+        background: #ffcc00 !important;
+
+        color: #111 !important;
+
+        border-radius: 50px !important;
+
+        text-decoration: none !important;
+
+        font-weight: bold !important;
+
+        border: 2px solid white !important;
+    }
+
+
+    /* =================================
+       CONTACT LINKS
+       ================================= */
+
+    .contact a {
+
+        display: inline-block;
+
+        margin: 6px 3px;
+
+        padding: 8px 14px;
+
+        color: white !important;
+
+        background: #333;
+
+        border-radius: 50px;
+
+        text-decoration: none;
+
+        font-weight: bold;
+    }
+
+
+    .contact a[href*="wa.me"] {
+
+        background: #25D366;
+
+        color: white !important;
+    }
+
+
+    .contact a[href*="facebook"] {
+
+        background: #1877F2;
+
+        color: white !important;
+    }
+
+
+    .contact a[href*="google"] {
+
+        background: #4285F4;
+
+        color: white !important;
+    }
+
+
+    .contact a[href*="instagram"] {
+
+        background: #E1306C;
+
+        color: white !important;
+    }
+
+
+    /* =================================
+       CONTACT TEXT
+       ================================= */
+
+    .contact,
+    .contact p {
+
+        color: white !important;
+    }
+
+
+    .contact hr {
+
+        border: 0;
+
+        height: 1px;
+
+        background: #555;
+
+        margin: 15px 0;
+    }
+
+
+    /* =================================
+       FOOTER
+       ================================= */
+
+    footer {
+
+        width: 100%;
+
+        margin-top: 25px;
+
+        padding: 18px 10px;
+
+        box-sizing: border-box;
+
+        background: #111;
+
         border-top: 1px solid #444;
-    }
-
-/* =========================
-   HERO - MOBILE
-   ========================= */
-
-@media (max-width: 768px) {
-
-    .hero-image {
-        position: relative;
-        width: 100%;
-        height: 360px;
-        overflow: hidden;
-        margin: 0 auto;
-    }
-
-    .hero-img {
-        width: 100%;
-        height: 360px;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-    }
-
-    /* Navigation */
-
-    .main-nav {
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-
-        width: 96%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        gap: 5px;
-
-        z-index: 10;
-    }
-
-    .main-nav a {
-        padding: 6px 8px;
-
-        font-size: 12px;
-
-        border-radius: 6px;
-
-        white-space: nowrap;
-    }
-
-    /* Hero Text */
-
-    .hero-text {
-        position: absolute;
-
-        top: 85px;
-        left: 50%;
-
-        transform: translateX(-50%);
-
-        width: 90%;
 
         text-align: center;
-
-        z-index: 5;
     }
 
-    .hero-text h2 {
-        margin: 5px 0;
+    footer p {
 
-        font-size: 24px;
+        color: white !important;
 
-        line-height: 1.2;
+        font-size: 13px;
+
+        line-height: 1.5;
+
+        margin: 0;
     }
 
-    .hero-text .aa {
-        margin-top: 8px;
 
-        font-size: 15px;
+    /* =================================
+       FLOATING WHATSAPP
+       ================================= */
 
-        line-height: 1.4;
+    .floating-buttons {
+
+        position: fixed;
+
+        right: 15px;
+
+        bottom: 25px;
+
+        z-index: 99;
     }
-}
+
+    .floating-buttons a {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        width: 55px;
+
+        height: 55px;
+
+        background: #25D366;
+
+        color: white;
+
+        border-radius: 50px;
+
+        text-decoration: none;
+
+        overflow: hidden;
+    }
+
+    .floating-buttons a i {
+
+        font-size: 28px !important;
+
+        color: white !important;
+
+        visibility: visible !important;
+
+        opacity: 1 !important;
+    }
 }
