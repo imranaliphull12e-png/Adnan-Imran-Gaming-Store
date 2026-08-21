@@ -630,7 +630,7 @@ section#CONTACT > a:hover {
 
     .hero-image {
         position: relative;
-        height:400px;
+        height:  auto;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -672,7 +672,7 @@ section#CONTACT > a:hover {
 
         border: 1px solid white;
         border-radius: 50px;
-     margin-left: 0;
+     margin-left: 25px;
 
         text-decoration: none;
 
