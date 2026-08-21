@@ -1,540 +1,500 @@
 /* =========================================
    MOBILE CSS
+   پہلے پرانی MOBILE CSS ہٹا کر یہ لگائیں
    ========================================= */
 
-* {
-    box-sizing: border-box;
-}
+@media (max-width: 767px) {
 
-html {
-    scroll-behavior: smooth;
-}
+    /* ---------- BASIC ---------- */
 
-body {
-    margin: 0;
-    padding: 0;
-    background: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-}
+    * {
+        box-sizing: border-box;
+    }
 
+    html {
+        scroll-behavior: smooth;
+    }
 
-/* =========================================
-   HERO
-   ========================================= */
+    body {
+        margin: 0;
+        padding: 0;
+        background: #777;
+        color: #111;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+    }
 
-.hero-image {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 
-.hero-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    object-fit: contain;
-    object-position: center;
-}
+    /* =========================================
+       HERO IMAGE
+       ========================================= */
 
+    .hero-image {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
 
-/* =========================================
-   NAVIGATION
-   Hero Picture کے اندر
-   ========================================= */
+    .hero-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
 
-.main-nav {
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
+        object-fit: contain;
+        object-position: center;
+    }
 
-    width: 96%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* =========================================
+       NAVIGATION
+       Hero image کے اندر رہے گی
+       ========================================= */
 
-    flex-wrap: wrap;
-    gap: 6px;
+    .main-nav {
+        position: absolute;
+        top: 8px;
+        left: 0;
 
-    padding: 5px;
+        width: 100%;
 
-    background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 
-    z-index: 100;
-}
+        gap: 5px;
 
-.main-nav a {
-    display: inline-block;
+        margin: 0;
+        padding: 4px;
 
-    padding: 8px 10px;
-    margin: 0;
+        background: transparent;
 
-    background: blue;
-    color: white;
+        z-index: 100;
+    }
 
-    text-decoration: none;
+    .main-nav a {
+        display: inline-block;
 
-    font-size: 12px;
-    font-weight: bold;
+        padding: 9px 12px;
+        margin: 0;
 
-    line-height: 1.2;
+        color: white;
+        background: #063cff;
 
-    border-radius: 18px;
+        border: 1px solid white;
+        border-radius: 22px;
 
-    white-space: nowrap;
-}
+        text-decoration: none;
 
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.1;
 
-/* =========================================
-   HERO TEXT
-   ========================================= */
+        white-space: nowrap;
+    }
 
-.hero-text {
-    position: absolute;
 
-    top: 24%;
-    left: 50%;
+    /* =========================================
+       HERO TEXT
+       Navigation کے نیچے
+       ========================================= */
 
-    transform: translateX(-50%);
+    .hero-text {
+        position: absolute;
 
-    width: 88%;
+        top: 28%;
+        left: 3%;
 
-    text-align: center;
+        width: 94%;
 
-    z-index: 50;
-}
+        margin: 0;
+        padding: 0;
 
-.hero-text h2 {
-    margin: 5px 0;
-    padding: 0;
+        text-align: center;
 
-    font-size: 21px;
-    line-height: 1.2;
+        z-index: 50;
+    }
 
-    font-weight: bold;
+    .hero-text h2 {
+        margin: 0 0 8px 0;
+        padding: 0;
 
-    color: white;
-}
+        color: white;
 
-.hero-text .aa {
-    margin: 8px 0;
-    padding: 0;
+        font-size: 21px;
+        line-height: 1.15;
 
-    font-size: 13px;
-    line-height: 1.45;
+        font-weight: bold;
 
-    color: white;
-}
+        text-align: center;
 
+        text-shadow:
+            2px 2px 3px black,
+            -1px -1px 2px black;
+    }
 
-/* =========================================
-   HOME / ABOUT / SERVICE / CONTACT
-   ========================================= */
+    .hero-text p.aa {
+        margin: 7px 0 0 0;
+        padding: 0;
 
-section {
-    width: 100%;
+        color: white;
 
-    margin: 0;
-    padding: 25px 10px;
+        font-size: 13px;
+        line-height: 1.35;
 
-    text-align: center;
-}
+        text-align: center;
 
-section h1 {
-    margin: 0 0 10px;
+        text-shadow:
+            2px 2px 3px black,
+            -1px -1px 2px black;
+    }
 
-    font-size: 22px;
 
-    color: white;
-}
+    /* =========================================
+       HOME / ABOUT / SERVICE / CONTACT
+       ========================================= */
 
-section p.a {
-    margin: 8px 0;
+    section {
+        width: 100%;
 
-    font-size: 16px;
-    line-height: 1.4;
+        margin: 0;
+        padding: 25px 12px;
 
-    color: white;
-}
+        background: #777;
+        color: white;
 
-section p.b {
-    margin: 8px 0;
+        text-align: center;
+    }
 
-    font-size: 13px;
-    line-height: 1.5;
+    section h1 {
+        margin: 0 0 15px 0;
 
-    color: white;
-}
+        font-size: 26px;
+        line-height: 1.2;
+    }
 
+    section .a {
+        margin: 10px 0;
 
-/* =========================================
-   BACK TO MENU
-   ========================================= */
+        font-size: 20px;
+        line-height: 1.35;
 
-section > a {
-    display: inline-block;
+        font-weight: bold;
+    }
 
-    margin-top: 12px;
+    section .b {
+        margin: 10px 0;
 
-    padding: 8px 14px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
 
-    background: blue;
-    color: white;
 
-    text-decoration: none;
+    /* =========================================
+       PRODUCT CARD
+       Left-right خالی جگہ ختم
+       ========================================= */
 
-    border-radius: 18px;
+    .product-card {
+        width: 100%;
+        max-width: none;
 
-    font-size: 12px;
-    font-weight: bold;
-}
+        min-height: 650px;
+        height: auto;
 
+        margin: 0 0 2px 0;
+        padding: 10px;
 
-/* =========================================
-   PRODUCT CARD
-   ========================================= */
+        background: white;
+        color: #111;
 
-.product-card {
-    width: 80%;
-    height: 500px;
+        border: 3px solid #222;
+        border-radius: 12px;
 
-    margin: 20px auto;
-    padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    background: white;
-    color: black;
+        overflow: visible;
+    }
 
-    border: 2px solid #222;
-    border-radius: 12px;
 
-    display: flex;
-    flex-direction: column;
+    /* =========================================
+       PRODUCT IMAGE BOX
+       ========================================= */
 
-    overflow: hidden;
-}
+    .image-box {
+        width: 350px;
+        height: 300px;
 
+        max-width: 100%;
 
-/* =========================================
-   PRODUCT IMAGE BOX
-   ========================================= */
+        margin: 0;
+        padding: 0;
 
-.image-box {
-    width: 100%;
-    height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    margin: 0;
-    padding: 0;
+        background: white;
 
-    display: flex;
+        overflow: hidden;
 
-    justify-content: center;
-    align-items: center;
+        flex-shrink: 0;
+    }
 
-    overflow: hidden;
+    .image-box img {
+        display: block;
 
-    flex-shrink: 0;
-}
+        width: 350px;
+        height: 300px;
 
+        max-width: 100%;
+        max-height: 300px;
 
-/* =========================================
-   PRODUCT IMAGE
-   اصل تصویر 350 × 300
-   مکمل نظر آئے گی
-   ========================================= */
+        margin: 0;
+        padding: 0;
 
-.image-box img {
-    width: 350px;
-    height: 300px;
+        object-fit: contain;
+        object-position: center;
+    }
 
-    max-width: 100%;
 
-    display: block;
+    /* =========================================
+       PRODUCT H3
+       ========================================= */
 
-    margin: 0;
-    padding: 0;
+    .product-card h3 {
+        width: 100%;
 
-    object-fit: contain;
-    object-position: center;
-}
+        margin: 18px 0 10px 0;
+        padding: 0 5px;
 
+        color: #111;
 
-/* =========================================
-   PRODUCT H3
-   ========================================= */
+        font-size: 23px;
+        line-height: 1.2;
 
-.product-card h3 {
-    margin: 8px 8px 4px;
-    padding: 0;
+        font-weight: bold;
 
-    text-align: center;
+        text-align: center;
 
-    font-size: 18px;
-    line-height: 1.25;
+        overflow: visible;
+    }
 
-    font-weight: bold;
 
-    color: black;
+    /* =========================================
+       PRODUCT PARAGRAPH
+       Text نہیں دبے گا
+       ========================================= */
 
-    flex-shrink: 0;
-}
+    .product-card p.c,
+    .product-card > p {
+        width: 100%;
 
+        margin: 0 0 18px 0;
+        padding: 0 5px;
 
-/* =========================================
-   PRODUCT PARAGRAPH
-   P.class C
-   ========================================= */
+        color: #222;
 
-.product-card p.c,
-.product-card > p {
-    margin: 4px 9px;
-    padding: 0;
+        font-size: 15px;
+        line-height: 1.5;
 
-    font-size: 12px;
-    line-height: 1.4;
+        text-align: left;
 
-    text-align: left;
+        overflow: visible;
+    }
 
-    color: black;
 
-    overflow: hidden;
+    /* =========================================
+       CALL + WHATSAPP BUTTONS
+       ========================================= */
 
-    flex: 1;
-}
+    .buttons {
+        width: 100%;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-/* =========================================
-   CALL + WHATSAPP BUTTONS
-   ========================================= */
+        gap: 12px;
 
-.buttons {
-    width: 100%;
+        margin: auto 0 5px 0;
+        padding: 5px 0;
 
-    display: flex;
+        flex-shrink: 0;
+    }
 
-    justify-content: center;
-    align-items: center;
+    .buttons a {
+        width: 45%;
 
-    gap: 8px;
+        padding: 11px 8px;
 
-    padding: 8px;
+        border-radius: 25px;
 
-    flex-shrink: 0;
-}
+        color: white;
 
-.whatsapp-btn,
-.call-btn {
-    width: 95px;
+        text-decoration: none;
 
-    padding: 7px 5px;
+        font-size: 14px;
+        font-weight: bold;
 
-    border-radius: 16px;
+        text-align: center;
+    }
 
-    text-align: center;
+    .whatsapp-btn {
+        background: #08a51a;
+    }
 
-    text-decoration: none;
+    .call-btn {
+        background: #123cff;
+    }
 
-    font-size: 11px;
 
-    font-weight: bold;
-}
-
-.whatsapp-btn {
-    background: green;
-    color: white;
-}
-
-.call-btn {
-    background: blue;
-    color: white;
-}
-
-
-/* =========================================
-   MOBILE PRODUCT DIVIDER
-   ہر Product Card کے بعد Yellow HR
-   ========================================= */
-
-.product-divider {
-    display: block;
-
-    width: 80%;
-
-    margin: 20px auto;
-
-    border: 0;
-
-    border-top: 2px solid yellow;
-}
-
-
-/* =========================================
-   LOWER ABOUT
-   ========================================= */
-
-.about {
-    width: 100%;
-
-    padding: 20px 10px;
-
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 20px;
-    margin-bottom: 12px;
-}
-
-.about p {
-    font-size: 13px;
-    line-height: 1.5;
-}
-
-
-/* =========================================
-   LOWER CONTACT
-   ========================================= */
-
-.contact {
-    width: 100%;
-
-    padding: 20px 10px;
-
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 20px;
-    margin-bottom: 12px;
-}
-
-.contact p {
-    font-size: 13px;
-    line-height: 1.5;
-}
-
-.contact hr {
-    border: 0;
-
-    border-top: 2px solid yellow;
-
-    width: 85%;
-
-    margin: 12px auto;
-}
-
-
-/* =========================================
-   FOOTER
-   ========================================= */
-
-footer {
-    width: 100%;
-
-    margin: 20px 0 0;
-
-    padding: 18px 10px;
-
-    background: black;
-    color: white;
-
-    text-align: center;
-
-    font-size: 11px;
-
-    line-height: 1.5;
-}
-
-footer hr {
-    border: 0;
-
-    border-top: 2px solid yellow;
-
-    width: 85%;
-
-    margin: 12px auto;
-}
-
-
-/* =========================================
-   FLOATING WHATSAPP
-   پہلے صرف LOGO
-   ========================================= */
-
-.floating-buttons {
-    position: fixed;
-
-    right: 15px;
-    bottom: 18px;
-
-    z-index: 9999;
-}
-
-.floating-buttons a {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    width: 48px;
-    height: 48px;
-
-    background: green;
-    color: white;
-
-    border-radius: 50%;
-
-    text-decoration: none;
-
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-
-    transition: all 0.25s ease;
-}
-
-.floating-buttons i {
-    font-size: 25px;
-}
-
-.floating-buttons .wa-text {
-    display: none;
-}
-
-
-/* =========================================
-   TAP کے بعد WhatsApp باہر آئے
-   ========================================= */
-
-.floating-buttons.open a {
-    width: 125px;
-
-    border-radius: 25px;
-
-    gap: 7px;
-}
-
-.floating-buttons.open .wa-text {
-    display: inline;
-
-    font-size: 12px;
-    font-weight: bold;
-}
-
-
-/* =========================================
-   LAPTOP پر HR چھپائیں
-   تاکہ 3 CARD والی ترتیب خراب نہ ہو
-   ========================================= */
-
-@media (min-width: 768px) {
+    /* =========================================
+       HR MOBILE پر دکھانے کی ضرورت نہیں
+       ========================================= */
 
     .product-divider {
         display: none;
+    }
+
+
+    /* =========================================
+       FLOATING WHATSAPP
+       شروع میں صرف گول LOGO
+       ========================================= */
+
+    .floating-buttons {
+        position: fixed;
+
+        right: 12px;
+        bottom: 20px;
+
+        width: 58px;
+        height: 58px;
+
+        margin: 0;
+        padding: 0;
+
+        z-index: 9999;
+
+        overflow: visible;
+    }
+
+    .floating-buttons a {
+        position: absolute;
+
+        right: 0;
+        top: 0;
+
+        width: 58px;
+        height: 58px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 8px;
+
+        padding: 0;
+
+        background: #08a51a;
+        color: white;
+
+        border-radius: 50%;
+
+        text-decoration: none;
+
+        box-shadow: 0 3px 12px rgba(0,0,0,0.4);
+
+        transition:
+            width 0.25s ease,
+            border-radius 0.25s ease,
+            padding 0.25s ease;
+    }
+
+    .floating-buttons i {
+        font-size: 30px;
+
+        flex-shrink: 0;
+    }
+
+    .floating-buttons .wa-text {
+        display: none;
+
+        font-size: 16px;
+        font-weight: bold;
+
+        white-space: nowrap;
+    }
+
+
+    /* =========================================
+       WhatsApp side میں کھلے
+       ========================================= */
+
+    .floating-buttons:hover a,
+    .floating-buttons:focus-within a,
+    .floating-buttons.open a {
+        width: 155px;
+
+        padding-left: 17px;
+
+        justify-content: flex-start;
+
+        border-radius: 30px;
+    }
+
+    .floating-buttons:hover .wa-text,
+    .floating-buttons:focus-within .wa-text,
+    .floating-buttons.open .wa-text {
+        display: inline-block;
+    }
+
+
+    /* =========================================
+       FOOTER
+       ========================================= */
+
+    footer {
+        width: 100%;
+
+        margin: 0;
+        padding: 20px 10px;
+
+        background: #222;
+        color: white;
+
+        text-align: center;
+
+        border-top: 3px solid yellow;
+    }
+
+    footer p {
+        margin: 0;
+
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+
+    /* =========================================
+       CONTACT / ABOUT LINES
+       ========================================= */
+
+    .contact hr,
+    .about hr {
+        width: 90%;
+
+        margin: 15px auto;
+
+        border: 0;
+        border-top: 2px solid yellow;
     }
 
 }
