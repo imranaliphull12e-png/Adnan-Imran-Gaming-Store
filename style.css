@@ -653,19 +653,19 @@ section#CONTACT > a:hover {
        Hero image کے اندر رہے گی
        ========================================= */
 
-    .main-nav {
+   .main-nav {
         position: absolute;
-        top: 8px;
+        top: 6px;
         left: 0;
 
         width: 100%; display: flex; justify-content: center;
         align-items: center;  flex-wrap: wrap; gap: 5px;
-          margin: 0;  padding: 4px;  background: transparent;
-
-        z-index: 100;
+          margin: 0;  padding: 4px;  box-sizing: border-box;
+      z-index: 100;
     }
 
-    .main-nav a {
+     a,
+     b {
         display: inline-block; padding: 9px 12px;
         margin: 0; color: white;
         background: #063cff;
@@ -693,10 +693,9 @@ section#CONTACT > a:hover {
         position: absolute;
 
         top: 22%;
-        left: 0;
         width: 100%;
        margin: 0;
-        padding: 0;
+        padding: 0 10px;
         text-align: center;
         z-index: 50;
     }
