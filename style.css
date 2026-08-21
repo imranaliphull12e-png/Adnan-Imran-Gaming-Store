@@ -672,7 +672,7 @@ section#CONTACT > a:hover {
 
         border: 1px solid white;
         border-radius: 50px;
-      left: 0;
+     margin-left: 0;
 
         text-decoration: none;
 
