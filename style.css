@@ -682,7 +682,7 @@ section#CONTACT > a:hover {
     .hero-text {
         position: absolute;
 
-        top: 22%;
+        top: 18%;
         width: 100%;
        margin: 0;
         padding: 0 10px;
@@ -695,7 +695,7 @@ section#CONTACT > a:hover {
         padding: 0;
         color: white;
         font-size: 14px;
-        line-height: 1.8;
+        line-height: 1.3;
         font-weight: bold;
         text-align: center;
 
@@ -1063,4 +1063,43 @@ section#CONTACT > a:hover {
         border: 0;
         border-top: 2px solid yellow;
     }
+}
+.btn-call,
+.btn-whatsapp,
+.btn-facebook,
+.btn-map,
+.btn-instagram{
+    display:inline-block;
+    padding:8px 22px;
+    margin:8px 0;
+    border-radius:25px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+}
+
+/* Call */
+.btn-call{
+    background:#007bff;
+}
+
+/* WhatsApp */
+.btn-whatsapp{
+    background:#25D366;
+}
+
+/* Facebook */
+.btn-facebook{
+    background:#1877F2;
+}
+
+/* Google Map */
+.btn-map{
+    background:#4285F4;
+}
+
+/* Instagram */
+.btn-instagram{
+    background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
 }
