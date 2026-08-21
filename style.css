@@ -700,7 +700,7 @@ section#CONTACT > a:hover {
         z-index: 50;
     }
 
-     h2 {
+   .hero-text h2 {
         margin: 0 0 8px 0;
         padding: 0;
         color: white;
@@ -714,7 +714,7 @@ section#CONTACT > a:hover {
             -1px -1px 2px black;
     }
 
- .aa {
+  .hero-text .aa {
         margin: 7px 0 0 0;
         padding: 0;
 
