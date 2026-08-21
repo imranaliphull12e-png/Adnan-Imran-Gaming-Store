@@ -1,7 +1,606 @@
-/* =========================================
-   MOBILE CSS
-   پہلے پرانی MOBILE CSS ہٹا کر یہ لگائیں
-   ========================================= */
+html,
+body{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   overflow-x: hidden;
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Hero Picture */
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.main-nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+    z-index: 10;
+
+    width: auto;
+}
+
+.main-nav a {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover {
+    background: white;
+    color: black;
+}
+
+
+/* =========================
+   HERO TEXT
+   ========================= */
+
+.hero-text {
+    position: absolute;
+
+    left: 50%;
+    top: 14%;
+
+    transform: translateX(-50%);
+
+    width: 80%;
+
+    text-align: center;
+
+    z-index: 5;
+
+    color:  rgb(236, 145, 8);
+
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-text h2 {
+    margin: 8px 0;
+font-size: 35px;
+}
+
+.hero-text .aa {
+    margin-top: 15px;
+    line-height: 1.6;
+    color: whitesmoke;
+    font-size: 23px;
+}
+
+
+
+/* ==============================
+   PRODUCT CARDS - LAPTOP / DESKTOP
+   ============================== */
+
+@media (min-width: 769px) {
+
+    .product-card {
+        width: 31%;
+        height: 600px;
+        margin: 1%;
+        padding: 15px;
+        box-sizing: border-box;
+
+        display: inline-flex;
+        vertical-align: top;
+        flex-direction: column;
+
+        background: #111;
+        border: 1px solid #333;
+        border-radius: 12px;
+
+        overflow: hidden;
+    }
+    .product-card .buttons {
+        margin-top: auto;
+    }
+
+    /* Card Image */
+    .product-card .image-box {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+
+    .product-card .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Card Heading */
+    .product-card h3 {
+        color: gold;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.3;
+        margin: 6px 0 2px 0;
+    }
+
+    /* Card Paragraph */
+    .product-card p {
+        color: white !important;
+        font-size: 15px;
+        line-height: 1.5;
+        height: 135px;
+        overflow: hidden;
+        margin: 5px 0 10px 0;
+    }
+
+    /* Buttons */
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    /* WhatsApp */
+    .whatsapp-btn {
+        background: #25D366;
+        color: white;
+
+        padding: 6px 12px;
+
+        border-radius: 50px;
+
+        text-decoration: none;
+        font-weight: bold;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+        background: #128C7E;
+        transform: scale(1.05);
+    }
+
+    /* Call */
+    .call-btn {
+        background: #007bff;
+        color: white;
+
+        padding: 6px 12px;
+
+        border-radius: 50px;
+
+        text-decoration: none;
+        font-weight: bold;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: 0.3s;
+    }
+
+    .call-btn:hover {
+        background: #0056b3;
+        transform: scale(1.05);
+    }
+
+    /* Divider */
+    .product-divider {
+        clear: both;
+        width: 100%;
+        border: 0;
+        height: 1px;
+        background: #444;
+        margin: 25px 0;
+    }
+
+}
+
+
+
+/* ==============================
+   FLOATING WHATSAPP BUTTON
+   LAPTOP / DESKTOP
+   ============================== */
+
+@media (min-width: 769px) {
+
+    .floating-buttons {
+        position: fixed;
+        right: 20px;
+        bottom: 70px;
+        z-index: 99;
+    }
+
+    .floating-buttons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 55px;
+        height: 55px;
+
+        background: #25D366;
+        color: white;
+
+        border-radius: 50px;
+
+        text-decoration: none;
+        overflow: hidden;
+
+        transition: all 0.35s ease;
+    }
+
+    /* WhatsApp Logo */
+    .floating-buttons i {
+        font-size: 28px;
+        flex-shrink: 0;
+    }
+
+    /* WhatsApp Text */
+    .floating-buttons .wa-text {
+        max-width: 0;
+        opacity: 0;
+        white-space: nowrap;
+
+        font-size: 16px;
+        font-weight: bold;
+
+        transition: all 0.35s ease;
+    }
+
+    /* Mouse لے جانے پر side کھلے */
+    .floating-buttons a:hover {
+        width: 150px;
+        padding: 0 15px;
+        gap: 10px;
+    }
+
+    .floating-buttons a:hover .wa-text {
+        max-width: 90px;
+        opacity: 1;
+    }
+
+    /* Hover effect */
+    .floating-buttons a:hover {
+        background: #128C7E;
+    }
+    /* Floating WhatsApp Logo */
+.floating-buttons a i {
+    display: block !important;
+    font-size: 28px !important;
+    color: white !important;
+    line-height: 1 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+}
+
+
+/* ==============================
+   BOTTOM ABOUT & CONTACT
+   LAPTOP / DESKTOP
+   ============================== */
+
+@media (min-width: 769px) {
+
+    .about,
+    .contact {
+        width: 90%;
+        max-width: 1100px;
+        margin: 35px auto;
+        padding: 25px;
+        box-sizing: border-box;
+
+        background: #1b1b1b;
+        border: 1px solid #444;
+        border-radius: 15px;
+
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    /* Heading */
+
+    .about h2,
+    .contact h2 {
+        color: gold;
+        font-size: 25px;
+        margin: 0 0 15px 0;
+    }
+
+    /* Text */
+
+    .about p,
+    .contact p {
+        color: white;
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 8px 0;
+    }
+
+    /* Contact Links */
+
+    .contact a {
+        display: inline-block;
+        margin: 8px;
+        padding: 8px 16px;
+
+        color: white;
+        background: #333;
+
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+
+        transition: 0.3s;
+    }
+
+    /* WhatsApp */
+
+    .contact a[href*="wa.me"] {
+        background: #25D366;
+        color: white;
+    }
+
+    .contact a[href*="wa.me"]:hover {
+        background: #128C7E;
+    }
+
+    /* Facebook */
+
+    .contact a[href*="facebook"] {
+        background: #1877F2;
+        color: white;
+    }
+
+    .contact a[href*="facebook"]:hover {
+        background: #0d5dcc;
+    }
+
+    /* Google Map */
+
+    .contact a[href*="google"] {
+        background: #4285F4;
+        color: white;
+    }
+
+    .contact a[href*="google"]:hover {
+        background: #3367D6;
+    }
+
+    /* Instagram */
+
+    .contact a[href*="instagram"] {
+        background: #E1306C;
+        color: white;
+    }
+
+    .contact a[href*="instagram"]:hover {
+        background: #C13584;
+    }
+
+    /* Email / Contact text */
+
+    .contact {
+        color: white;
+    }
+
+    .contact p {
+        color: white !important;
+    }
+
+    .contact hr {
+        border: 0;
+        height: 1px;
+        background: #555;
+        margin: 15px 0;
+    }
+
+    /* Footer */
+
+    footer {
+        width: 100%;
+        margin-top: 30px;
+        padding: 20px;
+        box-sizing: border-box;
+
+        background: #111;
+        border-top: 1px solid #444;
+
+        text-align: center;
+    }
+
+    footer p {
+        color: white;
+        font-size: 14px;
+        margin: 0;
+    }
+
+}
+
+
+/* =================================
+   HOME - ABOUT - SERVICE - CONTACT
+   FINAL DESIGN
+   ================================= */
+
+section#HOME,
+section#ABOUT,
+section#SERVICE,
+section#CONTACT {
+
+    width: 90% !important;
+    max-width: 950px !important;
+
+    margin: 40px auto !important;
+    padding: 30px 25px !important;
+
+    box-sizing: border-box !important;
+
+    background: linear-gradient(135deg, #111827, #243447) !important;
+
+    border: 2px solid #3b5268 !important;
+    border-radius: 18px !important;
+
+    text-align: center !important;
+
+    color: white !important;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.55) !important;
+}
+
+
+/* HEADINGS */
+
+section#HOME h1,
+section#ABOUT h1,
+section#SERVICE h1,
+section#CONTACT h1 {
+
+    color: gold !important;
+
+    font-size: 32px !important;
+
+    margin: 0 0 15px 0 !important;
+
+    text-align: center !important;
+}
+
+
+/* ALL PARAGRAPHS */
+
+section#HOME p,
+section#ABOUT p,
+section#SERVICE p,
+section#CONTACT p {
+
+    color: white !important;
+
+    font-size: 17px !important;
+
+    line-height: 1.6 !important;
+
+    margin: 8px 0 12px 0 !important;
+}
+
+
+/* FIRST PARAGRAPH */
+
+section#HOME p.a,
+section#ABOUT p.a,
+section#SERVICE p.a,
+section#CONTACT p.a {
+
+    color: #00d9ff !important;
+
+    font-weight: bold !important;
+}
+
+
+/* SECOND PARAGRAPH */
+
+section#HOME p.b,
+section#ABOUT p.b,
+section#SERVICE p.b,
+section#CONTACT p.b {
+
+    color: white !important;
+}
+
+
+/* =================================
+   BACK TO MENU
+   ================================= */
+
+section#HOME > a,
+section#ABOUT > a,
+section#SERVICE > a,
+section#CONTACT > a {
+
+    display: inline-block !important;
+
+    margin-top: 18px !important;
+
+    padding: 9px 22px !important;
+
+    background: #ffcc00 !important;
+
+    color: #111 !important;
+
+    border-radius: 50px !important;
+
+    text-decoration: none !important;
+
+    font-weight: bold !important;
+
+    border: 2px solid white !important;
+
+    transition: 0.3s !important;
+}
+
+
+section#HOME > a:hover,
+section#ABOUT > a:hover,
+section#SERVICE > a:hover,
+section#CONTACT > a:hover {
+
+    background: #ff3333 !important;
+
+    color: white !important;
+
+    transform: translateY(-2px);
+}
+
+
+
 
 @media (max-width: 767px) {
 
@@ -496,5 +1095,4 @@
         border: 0;
         border-top: 2px solid yellow;
     }
-
 }

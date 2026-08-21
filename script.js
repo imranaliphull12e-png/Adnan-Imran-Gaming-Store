@@ -6,16 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const navLinks = document.querySelectorAll(".main-nav a");
 
-    const homeSection = document.querySelector("#HOME");
-    const aboutSection = document.querySelector("#ABOUT");
-    const serviceSection = document.querySelector("#SERVICE");
-    const contactSection = document.querySelector("#CONTACT");
-
     const sections = [
-        homeSection,
-        aboutSection,
-        serviceSection,
-        contactSection
+        document.querySelector("#HOME"),
+        document.querySelector("#ABOUT"),
+        document.querySelector("#SERVICE"),
+        document.querySelector("#CONTACT")
     ];
 
     // شروع میں تمام sections hide
@@ -26,7 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    // Navigation buttons
+    /* =========================
+       NAVIGATION BUTTONS
+       ========================= */
+
     navLinks.forEach(function (link) {
 
         link.addEventListener("click", function (e) {
@@ -35,23 +33,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const target = this.getAttribute("href");
 
-            // پہلے تمام sections hide
+            // تمام sections hide
             sections.forEach(function (section) {
                 if (section) {
                     section.style.display = "none";
                 }
             });
 
-            // صرف منتخب section show
+            // منتخب section show
             const selectedSection = document.querySelector(target);
 
             if (selectedSection) {
+
                 selectedSection.style.display = "block";
 
                 selectedSection.scrollIntoView({
                     behavior: "smooth",
                     block: "start"
                 });
+
             }
 
         });
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
-            // واپس Hero کے اوپر جائیں
+            // Hero کے اوپر واپس
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
@@ -89,38 +89,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     });
-
-
-    /* =========================
-       FLOATING WHATSAPP BUTTON
-       ========================= */
-
-    const whatsappButton = document.querySelector(".floating-buttons");
-
-    if (whatsappButton) {
-
-        const whatsappLink = whatsappButton.querySelector("a");
-
-        if (whatsappLink) {
-
-            whatsappButton.addEventListener("click", function (e) {
-
-                if (!whatsappButton.classList.contains("open")) {
-
-                    e.preventDefault();
-
-                    whatsappButton.classList.add("open");
-
-                } else {
-
-                    window.location.href = whatsappLink.href;
-
-                }
-
-            });
-
-        }
-
-    }
 
 });
