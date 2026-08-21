@@ -693,7 +693,7 @@ section#CONTACT > a:hover {
         position: absolute;
 
         top: 22%;
-        left: 3%;
+        left: 0;
         width: 100%;
        margin: 0;
         padding: 0;
