@@ -657,7 +657,6 @@ section#CONTACT > a:hover {
    .main-nav {
         position: absolute;
         top: 4px;
-        left: 50;
 
         width: 100%; display: flex; justify-content: center;
         align-items: center;  flex-wrap: wrap; gap: 2px;
@@ -672,7 +671,6 @@ section#CONTACT > a:hover {
 
         border: 1px solid white;
         border-radius: 50px;
-         left: 25px;
 
         text-decoration: none;
 
