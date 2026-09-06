@@ -134,7 +134,7 @@ font-size: 35px;
     /* Card Image */
     .product-card .image-box {
         width: 100%;
-        height: 250px;
+        height: 260px;
         overflow: hidden;
         flex-shrink: 0;
     }
@@ -713,7 +713,7 @@ section#CONTACT > a:hover {
         margin: 7px 0 0 0;
         padding: 0;
 
-        color: black;
+        color:greenyellow;
         text-shadow: 2px 4px 8px black;
 
         font-size: 10px;
