@@ -835,7 +835,7 @@ section#CONTACT > a:hover {
     font-size: 17px;
     font-weight: bold;
     font-style: oblique;
-   margin: 4px;
+   margin: 20px 0 0;;
 }
 
 .pickup-box .g {
@@ -845,7 +845,7 @@ section#CONTACT > a:hover {
     font-style: italic;
     font-weight: bold;
     line-height: 1.4;
-    margin: 9px;
+    margin: 30px 0 0;
 }
 
     /* =========================================
@@ -958,7 +958,7 @@ section#CONTACT > a:hover {
         font-size: 15px;
         line-height: 1.5;
 
-        text-align: left;
+        text-align: center;
 
         overflow: visible;
     }
