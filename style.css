@@ -812,51 +812,41 @@ section#CONTACT > a:hover {
         line-height: 1.5;
     }
     
-    .pickup-service {
-        width: 100%;
-        max-width: 300px;
-        margin: 30px auto;
-        padding: 20px;
-        box-sizing: border-box;
-        background-color: #0b54f1;
-    }
+    
+   .pickup-box {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 3px;
+    box-sizing: border-box;
+}
 
-    .pickup-box {
-        width: 100%;
-        min-height: 400px;
-        margin-bottom: 30px;
-        padding: 3px;
+/* IMAGE */
+.pickup-box img {
+    width: 350px;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
 
-      
+.pickup-box h4 {
+    text-align: center;
+    color: gold;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: oblique;
+    margin: 8px 0 5px;
+}
 
-    }
-
-    /* IMAGE */
-    .pickup-box img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        display: block;
-        margin: 0;
-    }
-    h4 {
-        text-align: center;
-        color: gold; 
-        font-size: 13px;
-        font-weight: bold;
-        font-style: oblique;
-
-    }
-    .g {
-        text-align: center;
-        font-size: 8px;
-    color: black; 
+.pickup-box .g {
+    text-align: center;
+    font-size: 11px;
+    color: black;
     font-style: italic;
     font-weight: bold;
     line-height: 1.4;
-    }
-
-
+    margin: 0 5px;
+}
 
     /* =========================================
        PRODUCT CARD
