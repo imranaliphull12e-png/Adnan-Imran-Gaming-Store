@@ -4,7 +4,7 @@ body{
    padding: 0;
    width: 100%;
    overflow-x: hidden;
-   background-color: grey;
+   background-color: black;
 }
 
 /* =========================
@@ -75,11 +75,11 @@ body{
     position: absolute;
 
     left: 50%;
-    top: 10%;
+    top: 16%;
 
     transform: translateX(-50%);
 
-    width: 80%;
+    width: 90%;
 
     text-align: center;
 
@@ -92,7 +92,7 @@ body{
 
 .hero-text h2 {
     margin: 8px 0;
-font-size: 35px;
+font-size: 40px;
 }
 
 .hero-text .aa {
@@ -657,7 +657,7 @@ section#CONTACT > a:hover {
     body {
         margin: 0;
         padding: 0;
-        background: gray;
+        background: rgb(66, 2, 2);
         color: #111;
         font-family: Arial, sans-serif;
         overflow-x: hidden;
