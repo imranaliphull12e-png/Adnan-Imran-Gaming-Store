@@ -21,6 +21,29 @@
       gtag('js', new Date());
       gtag('config', 'G-KP7VXW81Z7');
     </script>
+<!-- Google Analytics + Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KP7VX0B127"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KP7VX0B127');
+  gtag('config', 'AW-18471118435');
+</script>
+
+<script>
+// Har WhatsApp button ko auto track karega
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"], a[href*="api.whatsapp"]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18471118435/vXcbCIWhnT1dBO2M2-dE'
+      });
+    });
+  });
+});
+</script>
+</head>
 </head>
 
 <body>
