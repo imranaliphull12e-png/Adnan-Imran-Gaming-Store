@@ -30,40 +30,113 @@ body{
 
 
 /* =========================
-   NAVIGATION
+   PROFESSIONAL HEADER
    ========================= */
 
-.main-nav{
-    position:absolute;
-    top:4px;
-    left:auto;
-    right: 45px;
+.site-header{
     width:100%;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding:8px 15px;
+    margin:0;
+    box-sizing:border-box;
+    background: wheat;
+}
+
+
+/* =========================
+   HEADER LOGO
+   ========================= */
+
+.header-logo{
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+}
+
+.header-logo a{
+    display:block;
+    margin: 0;
+    padding:0;
+}
+
+.header-logo img{
+    display:block;
+    width:70px;
+    height:70px;
+
+    max-width:70px;
+    max-height:70px;
+
+    object-fit:contain;
+}
+
+
+/* =========================
+   HEADER NAVIGATION
+   ========================= */
+
+.site-header .main-nav{
+    position:static;
+
+    width:auto;
+
     display:flex;
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    gap:16px;
+
+    gap:10px;
+
     margin:0;
-    padding:4px;
+    padding:0;
+
     box-sizing:border-box;
-    z-index:1000;
 }
 
-.main-nav a{
-    display:inline-block;
-    padding:14px 28px;
+
+/* =========================
+   HEADER BUTTONS
+   ========================= */
+
+.site-header .main-nav a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:10px 18px;
     margin:0;
 
     color:white;
-    background-color:blue;
+    background:#007bff;
+
     border:1px solid white;
     border-radius:50px;
+
     text-decoration:none;
-    font-size:15px;
+
+    font-size:14px;
     font-weight:bold;
     line-height:1.1;
+
     white-space:nowrap;
+}
+
+
+/* Header WhatsApp */
+
+.site-header .main-nav .header-whatsapp{
+    background:#25D366;
+}
+
+
+/* Header Call */
+
+.site-header .main-nav .header-call{
+    background:#007bff;
 }
 
 
@@ -85,14 +158,14 @@ body{
 
     z-index: 5;
 
-    color:  rgb(128, 255, 10);
+    color: rgb(128, 255, 10);
 
     text-shadow: 2px 2px 5px black;
 }
 
 .hero-text h2 {
     margin: 8px 0;
-font-size: 40px;
+    font-size: 40px;
 }
 
 .hero-text .aa {
@@ -101,54 +174,57 @@ font-size: 40px;
     color: whitesmoke;
     font-size: 28px;
 }
+
+
 /* =========================
-       PROFESSIONAL INTRO
-       ========================= */
+   PROFESSIONAL INTRO
+   ========================= */
 
-    .professional-intro {
+.professional-intro {
 
-        width:95%;
+    width:95%;
 
-        margin:25px auto 25px;
+    margin:25px auto 25px;
 
-        padding:18px 15px;
+    padding:18px 15px;
 
-        text-align:center;
+    text-align:center;
 
-        background:#111;
+    background:#111;
 
-        border:2px solid gold;
+    border:2px solid gold;
 
-        border-radius:12px;
+    border-radius:12px;
 
-        box-shadow:0 0 15px rgba(255,215,0,0.35);
-    }
-
-
-    .professional-intro h2 {
-
-        margin:0 0 10px;
-
-        color:gold;
-
-        font-size:25px;
-
-        font-weight:bold;
-    }
+    box-shadow:0 0 15px rgba(255,215,0,0.35);
+}
 
 
-    .professional-intro p {
+.professional-intro h2 {
 
-        margin:0 auto;
+    margin:0 0 10px;
 
-        max-width:850px;
+    color:gold;
 
-        color:white;
+    font-size:25px;
 
-        font-size:17px;
+    font-weight:bold;
+}
 
-        line-height:1.5;
-    }
+
+.professional-intro p {
+
+    margin:0 auto;
+
+    max-width:850px;
+
+    color:white;
+
+    font-size:17px;
+
+    line-height:1.5;
+}
+
 
 /* ==============================
    PRODUCT CARDS - LAPTOP / DESKTOP
@@ -173,11 +249,13 @@ font-size: 40px;
 
         overflow: hidden;
     }
+
     .product-card .buttons {
         margin-top: auto;
     }
 
     /* Card Image */
+
     .product-card .image-box {
         width: 100%;
         height: 260px;
@@ -193,6 +271,7 @@ font-size: 40px;
     }
 
     /* Card Heading */
+
     .product-card h3 {
         color: black;
         text-align: center;
@@ -202,6 +281,7 @@ font-size: 40px;
     }
 
     /* Card Paragraph */
+
     .product-card p {
         color: black;
         font-size: 14px;
@@ -217,6 +297,7 @@ font-size: 40px;
     }
 
     /* Buttons */
+
     .buttons {
         display: flex;
         justify-content: center;
@@ -226,6 +307,7 @@ font-size: 40px;
     }
 
     /* WhatsApp */
+
     .whatsapp-btn {
         background: #25D366;
         color: white;
@@ -250,6 +332,7 @@ font-size: 40px;
     }
 
     /* Call */
+
     .call-btn {
         background: #007bff;
         color: white;
@@ -274,6 +357,7 @@ font-size: 40px;
     }
 
     /* Divider */
+
     .product-divider {
         clear: both;
         width: 100%;
@@ -286,7 +370,6 @@ font-size: 40px;
 }
 
 
-
 /* ==============================
    FLOATING WHATSAPP BUTTON
    LAPTOP / DESKTOP
@@ -296,7 +379,7 @@ font-size: 40px;
 
     .floating-buttons {
         position: fixed;
-        right: 20px;
+        right: -20px;
         bottom: 70px;
         z-index: 99;
     }
@@ -321,12 +404,14 @@ font-size: 40px;
     }
 
     /* WhatsApp Logo */
+
     .floating-buttons i {
         font-size: 28px;
         flex-shrink: 0;
     }
 
     /* WhatsApp Text */
+
     .floating-buttons .wa-text {
         max-width: 0;
         opacity: 0;
@@ -339,6 +424,7 @@ font-size: 40px;
     }
 
     /* Mouse لے جانے پر side کھلے */
+
     .floating-buttons a:hover {
         width: 150px;
         padding: 0 15px;
@@ -351,18 +437,22 @@ font-size: 40px;
     }
 
     /* Hover effect */
+
     .floating-buttons a:hover {
         background: #128C7E;
     }
+
     /* Floating WhatsApp Logo */
-.floating-buttons a i {
-    display: block !important;
-    font-size: 28px !important;
-    color: white !important;
-    line-height: 1 !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
+
+    .floating-buttons a i {
+        display: block !important;
+        font-size: 28px !important;
+        color: white !important;
+        line-height: 1 !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
 }
 
 
@@ -642,7 +732,9 @@ section#CONTACT > a:hover {
 }
 
 
-
+/* =================================
+   MOBILE
+   ================================= */
 
 @media (max-width: 767px) {
 
@@ -672,7 +764,7 @@ section#CONTACT > a:hover {
 
     .hero-image {
         position: relative;
-        height:  auto;
+        height: auto;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -682,55 +774,99 @@ section#CONTACT > a:hover {
     .hero-img {
         display: block;
         width: 100%;
-        height: 350;
+        height: 350px;
         margin: 0;
         padding: 0;
 
         object-fit: contain;
         object-position: center;
     }
+/* =========================
+   MOBILE HEADER
+   ========================= */
 
-
-    /* =========================================
-       NAVIGATION
-       Hero image کے اندر رہے گی
-       ========================================= */
-
-   
-.main-nav{
-    position:absolute;
-    top:4px;
-    left:0;
+.site-header{
     width:100%;
+background-color: gold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:5px;
+
+    padding:5px 4px;
+
+    flex-wrap:wrap;
+}
+
+
+/* Mobile Logo */
+
+.header-logo{
+    flex-shrink:0;
+}
+
+.header-logo img{
+    width:45px;
+    height:45px;
+
+    max-width:45px;
+    max-height:45px;
+
+    object-fit:contain;
+}
+
+
+/* Mobile Navigation */
+
+.site-header .main-nav{
+    position:static;
+
+    width:auto;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     flex-wrap:wrap;
-    gap:4px;
+
+    gap:3px;
+
     margin:0;
-    padding:4px;
-    box-sizing:border-box;
-    z-index:100;
+    padding:0;
 }
 
-.main-nav a{
-    display:inline-block;
+
+/* Mobile Header Buttons */
+
+.site-header .main-nav a{
     padding:4px 7px;
-    margin:0;
-    color:white;
-    background-color:blue;
-    border:1px solid white;
-    border-radius:50px;
-    text-decoration:none;
+
     font-size:9px;
-    font-weight:bold;
-    line-height:1.1;
+
+    border-radius:50px;
+
     white-space:nowrap;
 }
 
+
+/* Mobile WhatsApp */
+
+.site-header .main-nav .header-whatsapp{
+    background:#25D366;
+}
+
+
+/* Mobile Call */
+
+.site-header .main-nav .header-call{
+    background:#007bff;
+}
+
+    
+
     /* =========================================
        HERO TEXT
-       Navigation کے نیچے
        ========================================= */
 
     .hero-text {
@@ -738,13 +874,13 @@ section#CONTACT > a:hover {
 
         top: 18%;
         width: 100%;
-       margin: 0;
+        margin: 0;
         padding: 0 10px;
         text-align: center;
         z-index: 50;
     }
 
-   .hero-text h2 {
+    .hero-text h2 {
         margin: 0 0 8px 0;
         padding: 0;
         color: white;
@@ -757,7 +893,7 @@ section#CONTACT > a:hover {
             2px 4px 8px black;
     }
 
-  .hero-text .aa {
+    .hero-text .aa {
         margin: 7px 0 0 0;
         padding: 0;
 
@@ -774,7 +910,8 @@ section#CONTACT > a:hover {
             -1px -1px 2px black;
     }
 
-/* =========================
+
+    /* =========================
        PROFESSIONAL INTRO
        ========================= */
 
@@ -823,6 +960,7 @@ section#CONTACT > a:hover {
         line-height:1.5;
     }
 
+
     /* =========================================
        HOME / ABOUT / SERVICE / CONTACT
        ========================================= */
@@ -861,12 +999,10 @@ section#CONTACT > a:hover {
         font-size: 15px;
         line-height: 1.5;
     }
-    
-  
+
 
     /* =========================================
        PRODUCT CARD
-       Left-right خالی جگہ ختم
        ========================================= */
 
     .product-card {
@@ -959,7 +1095,6 @@ section#CONTACT > a:hover {
 
     /* =========================================
        PRODUCT PARAGRAPH
-       Text نہیں دبے گا
        ========================================= */
 
     .product-card p.c,
@@ -1016,17 +1151,25 @@ section#CONTACT > a:hover {
         text-align: center;
     }
 
+
+    /* Product WhatsApp */
+
     .whatsapp-btn {
-        background: #08a51a;
+        background: #25D366;
+        color: white;
     }
 
+
+    /* Product Call */
+
     .call-btn {
-        background: #123cff;
+        background: #007bff;
+        color: white;
     }
 
 
     /* =========================================
-       HR MOBILE پر دکھانے کی ضرورت نہیں
+       HR MOBILE
        ========================================= */
 
     .product-divider {
@@ -1036,13 +1179,13 @@ section#CONTACT > a:hover {
 
     /* =========================================
        FLOATING WHATSAPP
-       شروع میں صرف گول LOGO
+       صرف تھوڑا باہر
        ========================================= */
 
     .floating-buttons {
         position: fixed;
 
-        right: 12px;
+        right: -20px;
         bottom: 20px;
 
         width: 58px;
@@ -1073,7 +1216,7 @@ section#CONTACT > a:hover {
 
         padding: 0;
 
-        background: #08a51a;
+        background: #25D366;
         color: white;
 
         border-radius: 50%;
@@ -1104,9 +1247,7 @@ section#CONTACT > a:hover {
     }
 
 
-    /* =========================================
-       WhatsApp side میں کھلے
-       ========================================= */
+    /* WhatsApp side میں کھلے */
 
     .floating-buttons:hover a,
     .floating-buttons:focus-within a,
@@ -1166,7 +1307,15 @@ section#CONTACT > a:hover {
         border: 0;
         border-top: 2px solid yellow;
     }
+
 }
+
+
+/* =========================================================
+   CONTACT / FOOTER BUTTONS
+   یہ حصہ آپ کے موجودہ design کے مطابق برقرار
+   ========================================================= */
+
 .btn-call,
 .btn-whatsapp,
 .btn-facebook,
@@ -1182,27 +1331,43 @@ section#CONTACT > a:hover {
     font-size:16px;
 }
 
+
 /* Call */
+
 .btn-call{
     background:#007bff;
 }
 
+
 /* WhatsApp */
+
 .btn-whatsapp{
     background:#25D366;
 }
 
+
 /* Facebook */
+
 .btn-facebook{
     background:#1877F2;
 }
 
+
 /* Google Map */
+
 .btn-map{
     background:#4285F4;
 }
 
+
 /* Instagram */
+
 .btn-instagram{
-    background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+    background:linear-gradient(
+        45deg,
+        #f58529,
+        #dd2a7b,
+        #8134af,
+        #515bd4
+    );
 }
