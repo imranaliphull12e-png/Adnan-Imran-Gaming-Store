@@ -43,7 +43,7 @@ body{
     padding:8px 15px;
     margin:0;
     box-sizing:border-box;
-    background: wheat;
+    background: black;
 }
 
 
@@ -379,7 +379,7 @@ body{
 
     .floating-buttons {
         position: fixed;
-        right: -20px;
+        right: 38px;
         bottom: 70px;
         z-index: 99;
     }
@@ -807,8 +807,8 @@ background-color: gold;
 }
 
 .header-logo img{
-    width:45px;
-    height:45px;
+    width:35px;
+    height:35px;
 
     max-width:45px;
     max-height:45px;
@@ -1185,7 +1185,7 @@ background-color: gold;
     .floating-buttons {
         position: fixed;
 
-        right: -20px;
+        right: 36px;
         bottom: 20px;
 
         width: 58px;
