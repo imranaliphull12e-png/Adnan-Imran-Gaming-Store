@@ -37,7 +37,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
-    <!-- Google Analytics -->
+    <!-- Google Analytics + Google Ads -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KP7VXW81Z7"></script>
 
     <script>
@@ -50,45 +50,29 @@
         gtag('js', new Date());
 
         gtag('config', 'G-KP7VXW81Z7');
-    </script>
-
-
-    <!-- Google Ads -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KP7VX0B127"></script>
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag(){
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-KP7VX0B127');
         gtag('config', 'AW-18471118435');
     </script>
 
 
-    <!-- WhatsApp Conversion Tracking -->
+    <!-- Google Ads: WhatsApp Lead Conversion -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        function gtag_report_conversion(url) {
 
-            document.querySelectorAll(
-                'a[href*="wa.me"], a[href*="whatsapp.com"], a[href*="api.whatsapp"]'
-            ).forEach(function (btn) {
+            var callback = function () {
 
-                btn.addEventListener('click', function () {
+                if (typeof(url) != 'undefined') {
+                    window.location.href = url;
+                }
 
-                    gtag('event', 'conversion', {
-                        'send_to': 'AW-18471118435/vXcbCIWhnT1dBO2M2-dE'
-                    });
+            };
 
-                });
-
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18471118435/VXthCIWHnIYdEOPM2-dE',
+                'event_callback': callback
             });
 
-        });
+            return false;
+        }
     </script>
 
 </head>
@@ -128,7 +112,8 @@
         <a href="https://wa.me/971566472531"
            class="header-whatsapp"
            target="_blank"
-           rel="noopener">
+           rel="noopener"
+           onclick="return gtag_report_conversion(this.href);">
 
             <i class="fab fa-whatsapp"></i>
             WhatsApp
@@ -329,7 +314,8 @@
         WhatsApp:
         <a href="https://wa.me/971566472531"
            target="_blank"
-           rel="noopener">
+           rel="noopener"
+           onclick="return gtag_report_conversion(this.href);">
             +971566472531
         </a>
     </p>
@@ -430,7 +416,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -475,7 +462,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -519,7 +507,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -568,7 +557,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -613,7 +603,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -658,7 +649,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -707,7 +699,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -753,7 +746,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -798,7 +792,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -846,7 +841,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -891,7 +887,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -937,7 +934,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -987,7 +985,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1032,7 +1031,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1078,7 +1078,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1128,7 +1129,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1175,7 +1177,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1221,7 +1224,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1272,7 +1276,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1317,7 +1322,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1363,7 +1369,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1412,7 +1419,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1457,7 +1465,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1503,7 +1512,8 @@
     <div class="buttons">
 
         <a href="https://wa.me/971566472531"
-           class="whatsapp-btn">
+           class="whatsapp-btn"
+           onclick="return gtag_report_conversion(this.href);">
             WhatsApp
         </a>
 
@@ -1601,7 +1611,8 @@
 
     <a href="https://wa.me/971566472531"
        target="_blank"
-       rel="noopener">
+       rel="noopener"
+       onclick="return gtag_report_conversion(this.href);">
 
         WhatsApp
 
@@ -1650,7 +1661,8 @@
 <div class="floating-buttons">
 
     <a href="https://wa.me/971566472531"
-       aria-label="WhatsApp">
+       aria-label="WhatsApp"
+       onclick="return gtag_report_conversion(this.href);">
 
         <i class="fab fa-whatsapp"></i>
 
@@ -1705,11 +1717,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
             whatsappButton.classList.add("open");
 
-        } else {
-
-            window.location.href = whatsappLink.href;
+            return;
 
         }
+
+        e.preventDefault();
+
+        gtag_report_conversion(whatsappLink.href);
 
     });
 
